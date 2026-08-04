@@ -1,1 +1,5 @@
-/* Remove any lines related to .dark_theme */
+:root {
+    --main-background-color: white;
+    --text-color: #333;
+    /* Remove any other variables related to dark mode */
+  }
