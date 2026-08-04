@@ -1,19 +1,18 @@
 "use client";
 
-import React, { useState } from 'react';
-import Settings from './components/Settings';
+   import React from 'react';
+   import { QueryClient, QueryClientProvider } from 'react-query';
+   import ToastProvider from './components/ToastProvider';
 
-const App = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+   const queryClient = new QueryClient();
 
-  return (
-    <div className={darkMode ? 'dark-mode' : ''}>
-      <button onClick={() => setDarkMode(!darkMode)}>
-        {darkMode ? 'Turn Off Dark Mode' : 'Turn On Dark Mode'}
-      </button>
-      <Settings onDarkModeToggle={() => setDarkMode(!darkMode)} />
-    </div>
-  );
-};
+   function App() {
+     return (
+       <QueryClientProvider client={queryClient}>
+         <ToastProvider />
+         {/* Your existing code */}
+       </QueryClientProvider>
+     );
+   }
 
-export default App;
+   export default App;
