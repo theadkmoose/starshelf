@@ -1,31 +1,18 @@
 "use client";
 
 import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./app";
 import "./css/style.css";
 
-const Index = () => {
-  const [darkModeEnabled, setDarkModeEnabled] = React.useState(() => localStorage.getItem("darkModeEnabled") === "true");
+const rootElement = document.getElementById("root");
 
-  React.useEffect(() => {
-    let rootElement;
-    if (localStorage.getItem('darkModeEnabled') === 'true') {
-      rootElement = document.body.classList.add('dark');
-    } else {
-      rootElement = document.body.classList.remove('dark');
-    }
+if (!rootElement) {
+  throw new Error("Root element not found");
+}
 
-    return () => {
-      if (rootElement) {
-        document.body.classList.remove('dark');
-      }
-    };
-  }, []);
-
-  return (
-    <div className={`bg-gray-100 min-h-screen text-gray-900 ${darkModeEnabled ? 'dark' : ''}`}>
-      {/* Your App component here */}
-    </div>
-  );
-};
-
-export default Index;
+ReactDOM.createRoot(rootElement).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
