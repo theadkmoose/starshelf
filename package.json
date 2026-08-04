@@ -1,1 +1,1 @@
-{"name":"starshelf","version":"1.0.0","private":true,"scripts":{"dev":"http-server public"}}
+{"name":"starshelf","version":"1.0.0","private":true,"scripts":{"dev":"npx http-server docs -p"}}
