@@ -269,7 +269,13 @@ const kingCatalog = [
     score: 61,
     evidence: ['Readable and effective', 'Good thematic hook', 'Less distinctive than the major classics']
   }
-];
+].map((item) => ({
+  ...item,
+  searchText: `${item.title} ${item.subgenre}`.toLowerCase()
+}));
+
+const kingStateKey = 'stephen-king-ranking-state';
+let searchTimer;
 
 const rubricDimensions = [
   { label: 'Craft & prose', weight: 25, note: 'Sentence control, voice, pacing, and density of imagery.' },
@@ -388,9 +394,12 @@ function renderCatalog(items) {
         </div>
       </div>
       <p class="ranking-summary">Score rationale: ${item.evidence[0].toLowerCase()}, ${item.evidence[1].toLowerCase()}, and ${item.evidence[2].toLowerCase()}.</p>
-      <ul class="evidence-list">
-        ${item.evidence.map((point) => `<li>${point}</li>`).join('')}
-      </ul>
+      <details class="ranking-evidence">
+        <summary>View scoring evidence</summary>
+        <ul class="evidence-list">
+          ${item.evidence.map((point) => `<li>${point}</li>`).join('')}
+        </ul>
+      </details>
     </article>
   `).join('');
 }
@@ -405,7 +414,7 @@ function applyFilters() {
   const kindValue = kindSelect ? kindSelect.value : 'all';
 
   const filtered = kingCatalog.filter((item) => {
-    const matchesSearch = !searchValue || `${item.title} ${item.subgenre}`.toLowerCase().includes(searchValue);
+    const matchesSearch = !searchValue || item.searchText.includes(searchValue);
     const matchesTier = tierValue === 'all' || item.tier === tierValue;
     const matchesKind = kindValue === 'all' || item.kind === kindValue;
     return matchesSearch && matchesTier && matchesKind;
@@ -418,6 +427,34 @@ function applyFilters() {
   });
 
   renderCatalog(sorted);
+  saveState();
+}
+
+function saveState() {
+  const state = {
+    search: document.getElementById('kingSearch').value,
+    tier: document.getElementById('kingTierFilter').value,
+    kind: document.getElementById('kingKindFilter').value
+  };
+  localStorage.setItem(kingStateKey, JSON.stringify(state));
+  const params = new URLSearchParams();
+  if (state.search) params.set('q', state.search);
+  if (state.tier !== 'all') params.set('tier', state.tier);
+  if (state.kind !== 'all') params.set('kind', state.kind);
+  history.replaceState(null, '', `${location.pathname}${params.size ? `?${params}` : ''}`);
+}
+
+function restoreState() {
+  const params = new URLSearchParams(location.search);
+  let stored = {};
+  try {
+    stored = JSON.parse(localStorage.getItem(kingStateKey) || '{}');
+  } catch {
+    stored = {};
+  }
+  document.getElementById('kingSearch').value = params.get('q') || stored.search || '';
+  document.getElementById('kingTierFilter').value = params.get('tier') || stored.tier || 'all';
+  document.getElementById('kingKindFilter').value = params.get('kind') || stored.kind || 'all';
 }
 
 function attachEvents() {
@@ -425,11 +462,17 @@ function attachEvents() {
   const tierSelect = document.getElementById('kingTierFilter');
   const kindSelect = document.getElementById('kingKindFilter');
 
-  [searchInput, tierSelect, kindSelect].forEach((element) => {
-    if (element) {
-      element.addEventListener('input', applyFilters);
-      element.addEventListener('change', applyFilters);
-    }
+  searchInput.addEventListener('input', () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(applyFilters, 200);
+  });
+  [tierSelect, kindSelect].forEach((element) => element.addEventListener('change', applyFilters));
+  document.querySelectorAll('.tier-jumps button').forEach((button) => {
+    button.addEventListener('click', () => {
+      tierSelect.value = button.dataset.tier;
+      applyFilters();
+      document.getElementById('rankingList').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
   });
 }
 
@@ -438,6 +481,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderRubric();
   renderMatrix();
   renderStarterPicks();
-  renderCatalog(kingCatalog);
+  restoreState();
+  applyFilters();
   attachEvents();
 });

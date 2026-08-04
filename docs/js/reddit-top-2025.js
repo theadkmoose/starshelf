@@ -127,7 +127,17 @@ const RANKINGS = [
   { rank: 247, title: "The Invisible Life of Addie LaRue", votes: 5, author: "V.E. Schwab", change: "-80" },
   { rank: 247, title: "Frieren: Beyond Journey's End", votes: 5, author: "Kanehito Yamada", change: "NEW" },
   { rank: 247, title: "Chain-Gang All-Stars", votes: 5, author: "Nana Kwame Adjei-Brenyah", change: "NEW" }
-];
+].map((row) => ({
+  ...row,
+  searchText: `${row.title} ${row.author}`.toLowerCase(),
+  movement: movementType(row.change),
+  movementValue: parseChange(row.change) || 0
+}));
+
+const redditStateKey = "reddit-2025-explorer-state";
+const explorerPageSize = 30;
+let visibleRows = explorerPageSize;
+let searchTimer;
 
 function parseChange(changeValue) {
   if (changeValue === "NEW") {
@@ -274,21 +284,21 @@ function renderTrendCards(rows) {
   const cards = [
     {
       title: "Fastest climbers",
-      items: risers.map((row) => `#${row.rank} ${row.title} (${row.change})`)
+      items: risers.map((row) => `#${row.rank} ${titleLink(row)} (${row.change})`)
     },
     {
       title: "Steepest declines",
-      items: fallers.map((row) => `#${row.rank} ${row.title} (${row.change})`)
+      items: fallers.map((row) => `#${row.rank} ${titleLink(row)} (${row.change})`)
     },
     {
       title: "Strong new arrivals",
-      items: newEntries.map((row) => `#${row.rank} ${row.title} (${row.votes} votes)`)
+      items: newEntries.map((row) => `#${row.rank} ${titleLink(row)} (${row.votes} votes)`)
     },
     {
       title: "Top-tier concentration",
       items: [
         `Top 20 rows in extracted set hold ${topSliceTotal} votes`,
-        `Sanderson-linked top-20 share in this cut: ${sandersonShare}%`,
+        `Sanderson-linked top-20 share in this cut: ${sandersonShare}% (${topSlice.filter((row) => row.author.includes("Sanderson")).map((row) => titleLink(row)).join(", ")})`,
         "Interpret with caution because aggregation policy is still debated"
       ]
     }
@@ -393,6 +403,15 @@ function movementPill(changeValue) {
   return `<span class="change-pill change-flat">${delta}</span>`;
 }
 
+function goodreadsSearchUrl(row) {
+  const query = encodeURIComponent(`${row.title} ${row.author}`);
+  return `https://www.goodreads.com/search?q=${query}`;
+}
+
+function titleLink(row) {
+  return `<a class="goodreads-title-link" href="${goodreadsSearchUrl(row)}" target="_blank" rel="noopener noreferrer">${row.title}</a>`;
+}
+
 function passesVoteBand(row, band) {
   if (band === "all") {
     return true;
@@ -415,33 +434,37 @@ function renderTable(rows) {
   const search = document.getElementById("rowSearch").value.trim().toLowerCase();
   const changeFilter = document.getElementById("changeFilter").value;
   const voteBand = document.getElementById("voteBandFilter").value;
+  const rankRange = document.getElementById("rankRangeFilter").value;
+  const sortMode = document.getElementById("sortFilter").value;
 
   const filtered = rows.filter((row) => {
-    const movement = movementType(row.change);
-    const movementOk = changeFilter === "all" ? true : movement === changeFilter;
-    const searchOk = !search
-      || row.title.toLowerCase().includes(search)
-      || row.author.toLowerCase().includes(search);
+    const movementOk = changeFilter === "all" ? true : row.movement === changeFilter;
+    const searchOk = !search || row.searchText.includes(search);
     const bandOk = passesVoteBand(row, voteBand);
-    return movementOk && searchOk && bandOk;
+    const rangeOk = rankRange === "all" || row.rank <= Number(rankRange);
+    return movementOk && searchOk && bandOk && rangeOk;
   });
+  filtered.sort((a, b) => {
+    if (sortMode === "votes") return b.votes - a.votes || a.rank - b.rank;
+    if (sortMode === "movement") return b.movementValue - a.movementValue || a.rank - b.rank;
+    return a.rank - b.rank || b.votes - a.votes;
+  });
+  const displayed = filtered.slice(0, visibleRows);
 
-  body.innerHTML = "";
-
-  filtered.forEach((row) => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
+  body.innerHTML = displayed.map((row) => `
+    <tr>
       <td>${row.rank}</td>
-      <td>${row.title}</td>
+      <td>${titleLink(row)}</td>
       <td>${row.author}</td>
       <td>${row.votes}</td>
       <td>${movementPill(row.change)}</td>
       <td>${signalLabel(row)}</td>
-    `;
-    body.appendChild(tr);
-  });
+    </tr>
+  `).join("");
 
-  summary.textContent = `Showing ${filtered.length} of ${rows.length} extracted rows from the published results table.`;
+  summary.textContent = `Showing ${displayed.length} of ${filtered.length} matching rows (${rows.length} extracted rows total).`;
+  document.getElementById("loadMoreRowsButton").hidden = displayed.length >= filtered.length;
+  saveExplorerState();
 }
 
 function renderTop100Table(rows) {
@@ -456,7 +479,7 @@ function renderTop100Table(rows) {
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${row.rank}</td>
-      <td>${row.title}</td>
+      <td>${titleLink(row)}</td>
       <td>${row.author}</td>
       <td>${row.votes}</td>
       <td>${movementPill(row.change)}</td>
@@ -471,11 +494,56 @@ function renderTop100Table(rows) {
 }
 
 function wireControls() {
-  ["rowSearch", "changeFilter", "voteBandFilter"].forEach((id) => {
-    const el = document.getElementById(id);
-    el.addEventListener("input", () => renderTable(RANKINGS));
-    el.addEventListener("change", () => renderTable(RANKINGS));
+  document.getElementById("rowSearch").addEventListener("input", () => {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => {
+      visibleRows = explorerPageSize;
+      renderTable(RANKINGS);
+    }, 200);
   });
+  ["changeFilter", "voteBandFilter", "rankRangeFilter", "sortFilter"].forEach((id) => {
+    document.getElementById(id).addEventListener("change", () => {
+      visibleRows = explorerPageSize;
+      renderTable(RANKINGS);
+    });
+  });
+  document.getElementById("loadMoreRowsButton").addEventListener("click", () => {
+    visibleRows += explorerPageSize;
+    renderTable(RANKINGS);
+  });
+}
+
+function saveExplorerState() {
+  const state = {
+    search: document.getElementById("rowSearch").value,
+    movement: document.getElementById("changeFilter").value,
+    votes: document.getElementById("voteBandFilter").value,
+    range: document.getElementById("rankRangeFilter").value,
+    sort: document.getElementById("sortFilter").value
+  };
+  localStorage.setItem(redditStateKey, JSON.stringify(state));
+  const params = new URLSearchParams();
+  if (state.search) params.set("q", state.search);
+  if (state.movement !== "all") params.set("movement", state.movement);
+  if (state.votes !== "all") params.set("votes", state.votes);
+  if (state.range !== "all") params.set("range", state.range);
+  if (state.sort !== "rank") params.set("sort", state.sort);
+  history.replaceState(null, "", `${location.pathname}${params.size ? `?${params}` : ""}`);
+}
+
+function restoreExplorerState() {
+  const params = new URLSearchParams(location.search);
+  let saved = {};
+  try {
+    saved = JSON.parse(localStorage.getItem(redditStateKey) || "{}");
+  } catch {
+    saved = {};
+  }
+  document.getElementById("rowSearch").value = params.get("q") || saved.search || "";
+  document.getElementById("changeFilter").value = params.get("movement") || saved.movement || "all";
+  document.getElementById("voteBandFilter").value = params.get("votes") || saved.votes || "all";
+  document.getElementById("rankRangeFilter").value = params.get("range") || saved.range || "all";
+  document.getElementById("sortFilter").value = params.get("sort") || saved.sort || "rank";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -485,6 +553,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderCommentarySignals();
   renderDataCaveats();
   renderTop100Table(RANKINGS);
+  restoreExplorerState();
   renderTable(RANKINGS);
   wireControls();
 });

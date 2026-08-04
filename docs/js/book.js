@@ -78,6 +78,47 @@ function detailRow(label, value) {
   return `<p><strong>${label}:</strong> ${value}</p>`;
 }
 
+function bookDescription(book) {
+  const summaries = {
+    "the way of kings|brandon sanderson": "On a storm-lashed world shaped by ancient conflicts, a soldier, a scholar, and a nobleman are drawn toward secrets that could change their fractured society. This epic fantasy introduces a vast setting of magic, honor, and political intrigue.",
+    "the name of the wind|patrick rothfuss": "A gifted musician and arcanist recounts the early years that turned him into a figure of legend. The story follows his search for knowledge, belonging, and answers about a mysterious force from his past.",
+    "all systems red|martha wells": "A self-aware security android would rather watch entertainment than interact with humans, but a dangerous assignment forces it to protect a research team. This fast science-fiction adventure blends dry humor with a mystery in deep space.",
+    "dune|frank herbert": "On a desert planet that produces the universe's most valuable resource, a young heir enters a struggle over power, ecology, and survival. The novel is a sweeping science-fiction epic about politics, faith, and adaptation.",
+    "the fifth season|n. k. jemisin": "In a world repeatedly reshaped by catastrophic climate events, a woman begins a desperate journey as society collapses around her. This inventive fantasy explores survival, power, and the cost of controlling a volatile world.",
+    "piranesi|susanna clarke": "A solitary man lives in an endless labyrinth of halls, statues, and tides, carefully recording its wonders. When a new visitor arrives, he begins to question what the House is and how he came to inhabit it.",
+    "1984|george orwell": "In a society ruled by constant surveillance and manufactured truth, an ordinary man begins to question the system that governs every part of life. This dystopian classic examines power, language, and personal freedom.",
+    "the left hand of darkness|ursula k. le guin": "An envoy travels to a cold, isolated world to invite its people into a wider interstellar alliance. His mission becomes a study of culture, trust, and the assumptions people bring to one another.",
+    "neuromancer|william gibson": "A washed-up hacker is offered one last job that pulls him into a high-stakes world of artificial intelligence, corporate power, and virtual reality. This influential cyberpunk novel follows a dangerous digital heist.",
+    "children of time|adrian tchaikovsky": "Humanity searches for a new home while an unexpected civilization develops on a distant world. The story spans generations and explores evolution, survival, and what it means to build a society.",
+    "a memory called empire|arkady martine": "A newly appointed ambassador arrives in the capital of a vast empire and must investigate her predecessor's death while navigating unfamiliar customs and political pressure. This space opera combines intrigue with questions of identity and belonging."
+  };
+
+  const key = `${bookMetaUtils.normalizeTitle(book.title)}|${bookMetaUtils.normalizeText(book.author)}`;
+  return summaries[key] || "A spoiler-free summary is not yet available for this title. Use the Goodreads link below to explore its official description and reader reviews.";
+}
+
+async function loadWikipediaSummary(book) {
+  const description = document.getElementById("bookDescription");
+  const source = document.getElementById("descriptionSource");
+  if (!description || !source) return;
+
+  const query = [book.title, book.author].filter(Boolean).join(" ");
+  try {
+    const response = await fetch(`https://en.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(query)}&gsrlimit=1&prop=extracts|info&exintro=1&explaintext=1&inprop=url&format=json&origin=*`);
+    if (!response.ok) return;
+
+    const payload = await response.json();
+    const page = Object.values(payload?.query?.pages || {})[0];
+    const extract = String(page?.extract || "").trim();
+    if (!extract) return;
+
+    description.textContent = extract;
+    source.innerHTML = `Source: <a href="${page.fullurl}" target="_blank" rel="noopener noreferrer">Wikipedia</a> (introductory extract; may contain spoilers and should be independently verified).`;
+  } catch (error) {
+    console.warn("Unable to load Wikipedia summary:", error);
+  }
+}
+
 function getStoredArray(key) {
   try {
     return JSON.parse(localStorage.getItem(key) || "[]");
@@ -155,6 +196,34 @@ function loadNote() {
 function saveNote() {
   localStorage.setItem(storageKey(), noteInput.value);
   alert("Note saved locally.");
+}
+
+async function renderProvenance(book) {
+  const container = document.getElementById("provenanceBox");
+  if (!container) return;
+
+  try {
+    const response = await fetch("../data/catalog_audit.json", { cache: "no-store" });
+    if (!response.ok) throw new Error("Audit manifest unavailable");
+    const manifest = await response.json();
+    const key = `${book.id}:${book.title}|${book.author}`;
+    const record = manifest.records?.[key];
+    if (!record) throw new Error("Audit record unavailable");
+
+    const fields = Object.entries(record.fields)
+      .map(([name, value]) => `<li><strong>${name.replace("_", " ")}:</strong> ${value.confidence}</li>`)
+      .join("");
+    container.innerHTML = `
+      <h3>Data provenance</h3>
+      <p class="source-note">Verification status: <strong>${record.status}</strong>. Audit generated ${manifest.generated_at}.</p>
+      <ul class="provenance-list">${fields}</ul>
+    `;
+  } catch (error) {
+    container.innerHTML = `
+      <h3>Data provenance</h3>
+      <p class="source-note">Verification status is unavailable for this entry.</p>
+    `;
+  }
 }
 
 function makeRecommendations(books, currentBook) {
@@ -289,6 +358,7 @@ fetch("books.json", { cache: "no-store" })
       links.push(`<a href="${book.libby_link}" target="_blank" rel="noopener">Libby</a>`);
     }
     const linksRow = links.length ? `<p><strong>Links:</strong> ${links.join(" | ")}</p>` : "";
+    const description = bookDescription(book);
 
     const detailRows = [
       detailRow("Author", book.author),
@@ -328,6 +398,11 @@ fetch("books.json", { cache: "no-store" })
           <div class="detail-cover">${coverHtml}</div>
           <div class="detail-content">
             <h2>${book.title}</h2>
+            <section class="book-description" aria-labelledby="description-heading">
+              <h3 id="description-heading">Description</h3>
+              <p id="bookDescription">${description}</p>
+              <p id="descriptionSource" class="description-source">Spoiler-free catalog summary.</p>
+            </section>
             ${detailRows}
             <p>
               <button id="favoriteBookButton">${favoriteButtonText}</button>
@@ -358,6 +433,8 @@ fetch("books.json", { cache: "no-store" })
     });
 
     resolveDetailCover(book);
+    loadWikipediaSummary(book);
+    renderProvenance(book);
     makeRecommendations(cleanedBooks, book);
     noteInput.value = loadNote();
     saveNoteButton.addEventListener("click", saveNote);

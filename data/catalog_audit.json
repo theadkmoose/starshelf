@@ -1,0 +1,5487 @@
+{
+  "catalog_path": "docs/books.json",
+  "generated_at": "2026-08-04",
+  "records": {
+    "100:Redshirts|John Scalzi": {
+      "author": "John Scalzi",
+      "book_id": 100,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Redshirts%20John%20Scalzi"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Redshirts",
+      "verified_at": null
+    },
+    "101:The Reformatory|Tananarive Due": {
+      "author": "Tananarive Due",
+      "book_id": 101,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Reformatory%20Tananarive%20Due"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Reformatory",
+      "verified_at": null
+    },
+    "102:Remembrance of Earth's Past|Cixin Liu": {
+      "author": "Cixin Liu",
+      "book_id": 102,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Remembrance%20of%20Earth%27s%20Past%20Cixin%20Liu"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Remembrance of Earth's Past",
+      "verified_at": null
+    },
+    "103:Revelation Space|Alastair Reynolds": {
+      "author": "Alastair Reynolds",
+      "book_id": 103,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Revelation%20Space%20Alastair%20Reynolds"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Revelation Space",
+      "verified_at": null
+    },
+    "104:Riyria Revelations|Michael J. Sullivan": {
+      "author": "Michael J. Sullivan",
+      "book_id": 104,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Riyria%20Revelations%20Michael%20J.%20Sullivan"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Riyria Revelations",
+      "verified_at": null
+    },
+    "105:Rook & Rose|M.A. Carrick": {
+      "author": "M.A. Carrick",
+      "book_id": 105,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Rook%20%26%20Rose%20M.A.%20Carrick"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Rook & Rose",
+      "verified_at": null
+    },
+    "106:Sarantine Universe|Guy Gavriel Kay": {
+      "author": "Guy Gavriel Kay",
+      "book_id": 106,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Sarantine%20Universe%20Guy%20Gavriel%20Kay"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Sarantine Universe",
+      "verified_at": null
+    },
+    "107:The Scholomance|Naomi Novik": {
+      "author": "Naomi Novik",
+      "book_id": 107,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Scholomance%20Naomi%20Novik"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Scholomance",
+      "verified_at": null
+    },
+    "108:The Second Apocalypse|R. Scott Bakker": {
+      "author": "R. Scott Bakker",
+      "book_id": 108,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Second%20Apocalypse%20R.%20Scott%20Bakker"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Second Apocalypse",
+      "verified_at": null
+    },
+    "109:Shadow of the Leviathan|Robert Jackson Bennett": {
+      "author": "Robert Jackson Bennett",
+      "book_id": 109,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Shadow%20of%20the%20Leviathan%20Robert%20Jackson%20Bennett"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Shadow of the Leviathan",
+      "verified_at": null
+    },
+    "10:Among Others|Jo Walton": {
+      "author": "Jo Walton",
+      "book_id": 10,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Among%20Others%20Jo%20Walton"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Among Others",
+      "verified_at": null
+    },
+    "110:The Sign of the Dragon|Mary Soon Lee": {
+      "author": "Mary Soon Lee",
+      "book_id": 110,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Sign%20of%20the%20Dragon%20Mary%20Soon%20Lee"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Sign of the Dragon",
+      "verified_at": null
+    },
+    "111:Solar Cycle|Gene Wolfe": {
+      "author": "Gene Wolfe",
+      "book_id": 111,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Solar%20Cycle%20Gene%20Wolfe"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Solar Cycle",
+      "verified_at": null
+    },
+    "112:The Song of Achilles|Madeline Miller": {
+      "author": "Madeline Miller",
+      "book_id": 112,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Song%20of%20Achilles%20Madeline%20Miller"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Song of Achilles",
+      "verified_at": null
+    },
+    "113:The Spear Cuts Through Water|Simon Jimenez": {
+      "author": "Simon Jimenez",
+      "book_id": 113,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Spear%20Cuts%20Through%20Water%20Simon%20Jimenez"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Spear Cuts Through Water",
+      "verified_at": null
+    },
+    "114:The Stand|Stephen King": {
+      "author": "Stephen King",
+      "book_id": 114,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Stand%20Stephen%20King"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Stand",
+      "verified_at": null
+    },
+    "115:The Stone Sky|N.K. Jemisin": {
+      "author": "N.K. Jemisin",
+      "book_id": 115,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Stone%20Sky%20N.K.%20Jemisin"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Stone Sky",
+      "verified_at": null
+    },
+    "116:The Stormlight Archive|Brandon Sanderson": {
+      "author": "Brandon Sanderson",
+      "book_id": 116,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Stormlight%20Archive%20Brandon%20Sanderson"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Stormlight Archive",
+      "verified_at": null
+    },
+    "117:Sun Eater|Christopher Ruocchio": {
+      "author": "Christopher Ruocchio",
+      "book_id": 117,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Sun%20Eater%20Christopher%20Ruocchio"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Sun Eater",
+      "verified_at": null
+    },
+    "118:The Sword of Kaigen|M.L. Wang": {
+      "author": "M.L. Wang",
+      "book_id": 118,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Sword%20of%20Kaigen%20M.L.%20Wang"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Sword of Kaigen",
+      "verified_at": null
+    },
+    "119:Teixcalaan|Arkady Martine": {
+      "author": "Arkady Martine",
+      "book_id": 119,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Teixcalaan%20Arkady%20Martine"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Teixcalaan",
+      "verified_at": null
+    },
+    "11:Anathem|Neal Stephenson": {
+      "author": "Neal Stephenson",
+      "book_id": 11,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Anathem%20Neal%20Stephenson"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Anathem",
+      "verified_at": null
+    },
+    "120:This Is How You Lose the Time War|Amal El-Mohtar and Max Gladstone": {
+      "author": "Amal El-Mohtar and Max Gladstone",
+      "book_id": 120,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=This%20Is%20How%20You%20Lose%20the%20Time%20War%20Amal%20El-Mohtar%20and%20Max%20Gladstone"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "This Is How You Lose the Time War",
+      "verified_at": null
+    },
+    "121:The Three-Body Problem|Cixin Liu": {
+      "author": "Cixin Liu",
+      "book_id": 121,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Three-Body%20Problem%20Cixin%20Liu"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Three-Body Problem",
+      "verified_at": null
+    },
+    "122:The Tide Child|R.J. Barker": {
+      "author": "R.J. Barker",
+      "book_id": 122,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Tide%20Child%20R.J.%20Barker"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Tide Child",
+      "verified_at": null
+    },
+    "123:Tigana|Guy Gavriel Kay": {
+      "author": "Guy Gavriel Kay",
+      "book_id": 123,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Tigana%20Guy%20Gavriel%20Kay"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Tigana",
+      "verified_at": null
+    },
+    "124:Tortall|Tamora Pierce": {
+      "author": "Tamora Pierce",
+      "book_id": 124,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Tortall%20Tamora%20Pierce"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Tortall",
+      "verified_at": null
+    },
+    "125:The Tyrant Philosophers|Adrian Tchaikovsky": {
+      "author": "Adrian Tchaikovsky",
+      "book_id": 125,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Tyrant%20Philosophers%20Adrian%20Tchaikovsky"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Tyrant Philosophers",
+      "verified_at": null
+    },
+    "126:Vorkosigan Saga|Lois McMaster Bujold": {
+      "author": "Lois McMaster Bujold",
+      "book_id": 126,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Vorkosigan%20Saga%20Lois%20McMaster%20Bujold"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Vorkosigan Saga",
+      "verified_at": null
+    },
+    "127:The Wandering Inn|Pirateaba": {
+      "author": "Pirateaba",
+      "book_id": 127,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Wandering%20Inn%20Pirateaba"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Wandering Inn",
+      "verified_at": null
+    },
+    "128:Warbreaker|Brandon Sanderson": {
+      "author": "Brandon Sanderson",
+      "book_id": 128,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Warbreaker%20Brandon%20Sanderson"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Warbreaker",
+      "verified_at": null
+    },
+    "129:Wars of Light and Shadow|Janny Wurts": {
+      "author": "Janny Wurts",
+      "book_id": 129,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Wars%20of%20Light%20and%20Shadow%20Janny%20Wurts"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Wars of Light and Shadow",
+      "verified_at": null
+    },
+    "12:Ancillary Justice|Ann Leckie": {
+      "author": "Ann Leckie",
+      "book_id": 12,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Ancillary%20Justice%20Ann%20Leckie"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Ancillary Justice",
+      "verified_at": null
+    },
+    "130:Watchmen|Alan Moore and Dave Gibbons": {
+      "author": "Alan Moore and Dave Gibbons",
+      "book_id": 130,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Watchmen%20Alan%20Moore%20and%20Dave%20Gibbons"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Watchmen",
+      "verified_at": null
+    },
+    "131:Watership Down|Richard Adams": {
+      "author": "Richard Adams",
+      "book_id": 131,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Watership%20Down%20Richard%20Adams"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Watership Down",
+      "verified_at": null
+    },
+    "132:The Way of Kings|Brandon Sanderson": {
+      "author": "Brandon Sanderson",
+      "book_id": 132,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Way%20of%20Kings%20Brandon%20Sanderson"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Way of Kings",
+      "verified_at": null
+    },
+    "133:Wayfarers|Becky Chambers": {
+      "author": "Becky Chambers",
+      "book_id": 133,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Wayfarers%20Becky%20Chambers"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Wayfarers",
+      "verified_at": null
+    },
+    "134:Wheel of Time|Robert Jordan": {
+      "author": "Robert Jordan",
+      "book_id": 134,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Wheel%20of%20Time%20Robert%20Jordan"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Wheel of Time",
+      "verified_at": null
+    },
+    "135:The Witcher|Andrzej Sapkowski": {
+      "author": "Andrzej Sapkowski",
+      "book_id": 135,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Witcher%20Andrzej%20Sapkowski"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Witcher",
+      "verified_at": null
+    },
+    "136:World of the Five Gods|Lois McMaster Bujold": {
+      "author": "Lois McMaster Bujold",
+      "book_id": 136,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=World%20of%20the%20Five%20Gods%20Lois%20McMaster%20Bujold"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "World of the Five Gods",
+      "verified_at": null
+    },
+    "137:The World of the White Rat|T. Kingfisher": {
+      "author": "T. Kingfisher",
+      "book_id": 137,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20World%20of%20the%20White%20Rat%20T.%20Kingfisher"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The World of the White Rat",
+      "verified_at": null
+    },
+    "13:Babel|R.F. Kuang": {
+      "author": "R.F. Kuang",
+      "book_id": 13,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Babel%20R.F.%20Kuang"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Babel",
+      "verified_at": null
+    },
+    "14:The Band|Nicholas Eames": {
+      "author": "Nicholas Eames",
+      "book_id": 14,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Band%20Nicholas%20Eames"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Band",
+      "verified_at": null
+    },
+    "15:The Banished Lands|John Gwynne": {
+      "author": "John Gwynne",
+      "book_id": 15,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Banished%20Lands%20John%20Gwynne"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Banished Lands",
+      "verified_at": null
+    },
+    "16:Between Two Fires|Christopher Buehlman": {
+      "author": "Christopher Buehlman",
+      "book_id": 16,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Between%20Two%20Fires%20Christopher%20Buehlman"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Between Two Fires",
+      "verified_at": null
+    },
+    "17:Beware of Chicken|CasualFarmer": {
+      "author": "CasualFarmer",
+      "book_id": 17,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Beware%20of%20Chicken%20CasualFarmer"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Beware of Chicken",
+      "verified_at": null
+    },
+    "18:Blacktongue|Christopher Buehlman": {
+      "author": "Christopher Buehlman",
+      "book_id": 18,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Blacktongue%20Christopher%20Buehlman"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Blacktongue",
+      "verified_at": null
+    },
+    "19:Blood Over Bright Haven|M.L. Wang": {
+      "author": "M.L. Wang",
+      "book_id": 19,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Blood%20Over%20Bright%20Haven%20M.L.%20Wang"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Blood Over Bright Haven",
+      "verified_at": null
+    },
+    "1:1984|George Orwell": {
+      "author": "George Orwell",
+      "book_id": 1,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=1984%20George%20Orwell"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "1984",
+      "verified_at": null
+    },
+    "20:The Books of Babel|Josiah Bancroft": {
+      "author": "Josiah Bancroft",
+      "book_id": 20,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Books%20of%20Babel%20Josiah%20Bancroft"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Books of Babel",
+      "verified_at": null
+    },
+    "21:The Books of the Raksura|Martha Wells": {
+      "author": "Martha Wells",
+      "book_id": 21,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Books%20of%20the%20Raksura%20Martha%20Wells"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Books of the Raksura",
+      "verified_at": null
+    },
+    "22:The Broken Earth|N.K. Jemisin": {
+      "author": "N.K. Jemisin",
+      "book_id": 22,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Broken%20Earth%20N.K.%20Jemisin"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Broken Earth",
+      "verified_at": null
+    },
+    "23:The Broken Empire Universe|Mark Lawrence": {
+      "author": "Mark Lawrence",
+      "book_id": 23,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Broken%20Empire%20Universe%20Mark%20Lawrence"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Broken Empire Universe",
+      "verified_at": null
+    },
+    "24:Chain-Gang All-Stars|Nana Kwame Adjei-Brenyah": {
+      "author": "Nana Kwame Adjei-Brenyah",
+      "book_id": 24,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Chain-Gang%20All-Stars%20Nana%20Kwame%20Adjei-Brenyah"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Chain-Gang All-Stars",
+      "verified_at": null
+    },
+    "25:Children of Time|Adrian Tchaikovsky": {
+      "author": "Adrian Tchaikovsky",
+      "book_id": 25,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Children%20of%20Time%20Adrian%20Tchaikovsky"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Children of Time",
+      "verified_at": null
+    },
+    "26:The Chronicles of Osreth|Katherine Addison": {
+      "author": "Katherine Addison",
+      "book_id": 26,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Chronicles%20of%20Osreth%20Katherine%20Addison"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Chronicles of Osreth",
+      "verified_at": null
+    },
+    "27:The Chronicles of the Black Company|Glen Cook": {
+      "author": "Glen Cook",
+      "book_id": 27,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Chronicles%20of%20the%20Black%20Company%20Glen%20Cook"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Chronicles of the Black Company",
+      "verified_at": null
+    },
+    "28:Circe|Madeline Miller": {
+      "author": "Madeline Miller",
+      "book_id": 28,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Circe%20Madeline%20Miller"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Circe",
+      "verified_at": null
+    },
+    "29:The City & The City|China Mi\u00e9ville": {
+      "author": "China Mi\u00e9ville",
+      "book_id": 29,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20City%20%26%20The%20City%20China%20Mi%C3%A9ville"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The City & The City",
+      "verified_at": null
+    },
+    "2:A Court of Thorns and Roses|Sarah J. Maas": {
+      "author": "Sarah J. Maas",
+      "book_id": 2,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=A%20Court%20of%20Thorns%20and%20Roses%20Sarah%20J.%20Maas"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "A Court of Thorns and Roses",
+      "verified_at": null
+    },
+    "30:The City We Became|N.K. Jemisin": {
+      "author": "N.K. Jemisin",
+      "book_id": 30,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20City%20We%20Became%20N.K.%20Jemisin"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The City We Became",
+      "verified_at": null
+    },
+    "31:Cloud Atlas|David Mitchell": {
+      "author": "David Mitchell",
+      "book_id": 31,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Cloud%20Atlas%20David%20Mitchell"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Cloud Atlas",
+      "verified_at": null
+    },
+    "32:Cosmere|Brandon Sanderson": {
+      "author": "Brandon Sanderson",
+      "book_id": 32,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Cosmere%20Brandon%20Sanderson"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Cosmere",
+      "verified_at": null
+    },
+    "33:Covenant of Steel|Anthony Ryan": {
+      "author": "Anthony Ryan",
+      "book_id": 33,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Covenant%20of%20Steel%20Anthony%20Ryan"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Covenant of Steel",
+      "verified_at": null
+    },
+    "34:Cradle|Will Wight": {
+      "author": "Will Wight",
+      "book_id": 34,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Cradle%20Will%20Wight"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Cradle",
+      "verified_at": null
+    },
+    "35:Craft Sequence|Max Gladstone": {
+      "author": "Max Gladstone",
+      "book_id": 35,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Craft%20Sequence%20Max%20Gladstone"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Craft Sequence",
+      "verified_at": null
+    },
+    "36:Cyteen|C.J. Cherryh": {
+      "author": "C.J. Cherryh",
+      "book_id": 36,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Cyteen%20C.J.%20Cherryh"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Cyteen",
+      "verified_at": null
+    },
+    "37:The Dandelion Dynasty|Ken Liu": {
+      "author": "Ken Liu",
+      "book_id": 37,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Dandelion%20Dynasty%20Ken%20Liu"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Dandelion Dynasty",
+      "verified_at": null
+    },
+    "38:The Dark Tower|Stephen King": {
+      "author": "Stephen King",
+      "book_id": 38,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Dark%20Tower%20Stephen%20King"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Dark Tower",
+      "verified_at": null
+    },
+    "39:Discworld|Terry Pratchett": {
+      "author": "Terry Pratchett",
+      "book_id": 39,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Discworld%20Terry%20Pratchett"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Discworld",
+      "verified_at": null
+    },
+    "3:A Desolation Called Peace|Arkady Martine": {
+      "author": "Arkady Martine",
+      "book_id": 3,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=A%20Desolation%20Called%20Peace%20Arkady%20Martine"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "A Desolation Called Peace",
+      "verified_at": null
+    },
+    "40:The Dispossessed|Ursula K. Le Guin": {
+      "author": "Ursula K. Le Guin",
+      "book_id": 40,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Dispossessed%20Ursula%20K.%20Le%20Guin"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Dispossessed",
+      "verified_at": null
+    },
+    "41:The Dresden Files|Jim Butcher": {
+      "author": "Jim Butcher",
+      "book_id": 41,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Dresden%20Files%20Jim%20Butcher"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Dresden Files",
+      "verified_at": null
+    },
+    "42:Dune|Frank Herbert": {
+      "author": "Frank Herbert",
+      "book_id": 42,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Dune%20Frank%20Herbert"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Dune",
+      "verified_at": null
+    },
+    "43:Dungeon Crawler Carl|Matt Dinniman": {
+      "author": "Matt Dinniman",
+      "book_id": 43,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Dungeon%20Crawler%20Carl%20Matt%20Dinniman"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Dungeon Crawler Carl",
+      "verified_at": null
+    },
+    "44:Earthsea Cycle|Ursula K. Le Guin": {
+      "author": "Ursula K. Le Guin",
+      "book_id": 44,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Earthsea%20Cycle%20Ursula%20K.%20Le%20Guin"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Earthsea Cycle",
+      "verified_at": null
+    },
+    "45:Emily Wilde|Heather Fawcett": {
+      "author": "Heather Fawcett",
+      "book_id": 45,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Emily%20Wilde%20Heather%20Fawcett"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Emily Wilde",
+      "verified_at": null
+    },
+    "46:The Emperor's Soul|Brandon Sanderson": {
+      "author": "Brandon Sanderson",
+      "book_id": 46,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Emperor%27s%20Soul%20Brandon%20Sanderson"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Emperor's Soul",
+      "verified_at": null
+    },
+    "47:The Empyrean|Rebecca Yarros": {
+      "author": "Rebecca Yarros",
+      "book_id": 47,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Empyrean%20Rebecca%20Yarros"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Empyrean",
+      "verified_at": null
+    },
+    "48:Ender's Saga|Orson Scott Card": {
+      "author": "Orson Scott Card",
+      "book_id": 48,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Ender%27s%20Saga%20Orson%20Scott%20Card"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Ender's Saga",
+      "verified_at": null
+    },
+    "49:The Expanse|James S.A. Corey": {
+      "author": "James S.A. Corey",
+      "book_id": 49,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Expanse%20James%20S.A.%20Corey"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Expanse",
+      "verified_at": null
+    },
+    "4:A Fire Upon the Deep|Vernor Vinge": {
+      "author": "Vernor Vinge",
+      "book_id": 4,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=A%20Fire%20Upon%20the%20Deep%20Vernor%20Vinge"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "A Fire Upon the Deep",
+      "verified_at": null
+    },
+    "50:Fallen Gods|Hannah Kaner": {
+      "author": "Hannah Kaner",
+      "book_id": 50,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Fallen%20Gods%20Hannah%20Kaner"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Fallen Gods",
+      "verified_at": null
+    },
+    "51:The Fifth Season|N.K. Jemisin": {
+      "author": "N.K. Jemisin",
+      "book_id": 51,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Fifth%20Season%20N.K.%20Jemisin"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Fifth Season",
+      "verified_at": null
+    },
+    "52:First Law World|Joe Abercrombie": {
+      "author": "Joe Abercrombie",
+      "book_id": 52,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=First%20Law%20World%20Joe%20Abercrombie"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "First Law World",
+      "verified_at": null
+    },
+    "53:Frankenstein|Mary Shelley": {
+      "author": "Mary Shelley",
+      "book_id": 53,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Frankenstein%20Mary%20Shelley"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Frankenstein",
+      "verified_at": null
+    },
+    "54:Frieren: Beyond Journey's End|Kanehito Yamada": {
+      "author": "Kanehito Yamada",
+      "book_id": 54,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Frieren%3A%20Beyond%20Journey%27s%20End%20Kanehito%20Yamada"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Frieren: Beyond Journey's End",
+      "verified_at": null
+    },
+    "55:Gentleman Bastard|Scott Lynch": {
+      "author": "Scott Lynch",
+      "book_id": 55,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Gentleman%20Bastard%20Scott%20Lynch"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Gentleman Bastard",
+      "verified_at": null
+    },
+    "56:Gormenghast|Mervyn Peake": {
+      "author": "Mervyn Peake",
+      "book_id": 56,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Gormenghast%20Mervyn%20Peake"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Gormenghast",
+      "verified_at": null
+    },
+    "57:The Green Bone Saga|Fonda Lee": {
+      "author": "Fonda Lee",
+      "book_id": 57,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Green%20Bone%20Saga%20Fonda%20Lee"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Green Bone Saga",
+      "verified_at": null
+    },
+    "58:Grishaverse|Leigh Bardugo": {
+      "author": "Leigh Bardugo",
+      "book_id": 58,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Grishaverse%20Leigh%20Bardugo"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Grishaverse",
+      "verified_at": null
+    },
+    "59:Hainish Cycle|Ursula K. Le Guin": {
+      "author": "Ursula K. Le Guin",
+      "book_id": 59,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Hainish%20Cycle%20Ursula%20K.%20Le%20Guin"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Hainish Cycle",
+      "verified_at": null
+    },
+    "5:A Memory Called Empire|Arkady Martine": {
+      "author": "Arkady Martine",
+      "book_id": 5,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=A%20Memory%20Called%20Empire%20Arkady%20Martine"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "A Memory Called Empire",
+      "verified_at": null
+    },
+    "60:Harry Potter|J.K. Rowling": {
+      "author": "J.K. Rowling",
+      "book_id": 60,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Harry%20Potter%20J.K.%20Rowling"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Harry Potter",
+      "verified_at": null
+    },
+    "61:Hierarchy|James Islington": {
+      "author": "James Islington",
+      "book_id": 61,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Hierarchy%20James%20Islington"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Hierarchy",
+      "verified_at": null
+    },
+    "62:His Dark Materials|Philip Pullman": {
+      "author": "Philip Pullman",
+      "book_id": 62,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=His%20Dark%20Materials%20Philip%20Pullman"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "His Dark Materials",
+      "verified_at": null
+    },
+    "63:Hitchhiker's Guide to the Galaxy|Douglas Adams": {
+      "author": "Douglas Adams",
+      "book_id": 63,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Hitchhiker%27s%20Guide%20to%20the%20Galaxy%20Douglas%20Adams"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Hitchhiker's Guide to the Galaxy",
+      "verified_at": null
+    },
+    "64:House of Leaves|Mark Z. Danielewski": {
+      "author": "Mark Z. Danielewski",
+      "book_id": 64,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=House%20of%20Leaves%20Mark%20Z.%20Danielewski"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "House of Leaves",
+      "verified_at": null
+    },
+    "65:The Hunger Games|Suzanne Collins": {
+      "author": "Suzanne Collins",
+      "book_id": 65,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Hunger%20Games%20Suzanne%20Collins"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Hunger Games",
+      "verified_at": null
+    },
+    "66:Hyperion Cantos|Dan Simmons": {
+      "author": "Dan Simmons",
+      "book_id": 66,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Hyperion%20Cantos%20Dan%20Simmons"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Hyperion Cantos",
+      "verified_at": null
+    },
+    "67:I Who Have Never Known Men|Jacqueline Harpman": {
+      "author": "Jacqueline Harpman",
+      "book_id": 67,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=I%20Who%20Have%20Never%20Known%20Men%20Jacqueline%20Harpman"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "I Who Have Never Known Men",
+      "verified_at": null
+    },
+    "68:The Invisible Life of Addie LaRue|V.E. Schwab": {
+      "author": "V.E. Schwab",
+      "book_id": 68,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Invisible%20Life%20of%20Addie%20LaRue%20V.E.%20Schwab"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Invisible Life of Addie LaRue",
+      "verified_at": null
+    },
+    "69:Jonathan Strange & Mr Norrell|Susanna Clarke": {
+      "author": "Susanna Clarke",
+      "book_id": 69,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Jonathan%20Strange%20%26%20Mr%20Norrell%20Susanna%20Clarke"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Jonathan Strange & Mr Norrell",
+      "verified_at": null
+    },
+    "6:A Practical Guide to Evil|ErraticErrata": {
+      "author": "ErraticErrata",
+      "book_id": 6,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=A%20Practical%20Guide%20to%20Evil%20ErraticErrata"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "A Practical Guide to Evil",
+      "verified_at": null
+    },
+    "70:The Kingkiller Chronicle|Patrick Rothfuss": {
+      "author": "Patrick Rothfuss",
+      "book_id": 70,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Kingkiller%20Chronicle%20Patrick%20Rothfuss"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Kingkiller Chronicle",
+      "verified_at": null
+    },
+    "71:Kushiel's Universe|Jacqueline Carey": {
+      "author": "Jacqueline Carey",
+      "book_id": 71,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Kushiel%27s%20Universe%20Jacqueline%20Carey"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Kushiel's Universe",
+      "verified_at": null
+    },
+    "72:The Lathe of Heaven|Ursula K. Le Guin": {
+      "author": "Ursula K. Le Guin",
+      "book_id": 72,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Lathe%20of%20Heaven%20Ursula%20K.%20Le%20Guin"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Lathe of Heaven",
+      "verified_at": null
+    },
+    "73:Lays of the Hearth-Fire|Victoria Goddard": {
+      "author": "Victoria Goddard",
+      "book_id": 73,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Lays%20of%20the%20Hearth-Fire%20Victoria%20Goddard"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Lays of the Hearth-Fire",
+      "verified_at": null
+    },
+    "74:The Left Hand of Darkness|Ursula K. Le Guin": {
+      "author": "Ursula K. Le Guin",
+      "book_id": 74,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Left%20Hand%20of%20Darkness%20Ursula%20K.%20Le%20Guin"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Left Hand of Darkness",
+      "verified_at": null
+    },
+    "75:Legends and Lattes|Travis Baldree": {
+      "author": "Travis Baldree",
+      "book_id": 75,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Legends%20and%20Lattes%20Travis%20Baldree"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Legends and Lattes",
+      "verified_at": null
+    },
+    "76:The Library at Mount Char|Scott Hawkins": {
+      "author": "Scott Hawkins",
+      "book_id": 76,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Library%20at%20Mount%20Char%20Scott%20Hawkins"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Library at Mount Char",
+      "verified_at": null
+    },
+    "77:Lightbringer|Brent Weeks": {
+      "author": "Brent Weeks",
+      "book_id": 77,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Lightbringer%20Brent%20Weeks"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Lightbringer",
+      "verified_at": null
+    },
+    "78:The Little Prince|Antoine de Saint-Exupery": {
+      "author": "Antoine de Saint-Exupery",
+      "book_id": 78,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Little%20Prince%20Antoine%20de%20Saint-Exupery"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Little Prince",
+      "verified_at": null
+    },
+    "79:The Locked Tomb|Tamsyn Muir": {
+      "author": "Tamsyn Muir",
+      "book_id": 79,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Locked%20Tomb%20Tamsyn%20Muir"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Locked Tomb",
+      "verified_at": null
+    },
+    "7:A Song of Ice and Fire|George R.R. Martin": {
+      "author": "George R.R. Martin",
+      "book_id": 7,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=A%20Song%20of%20Ice%20and%20Fire%20George%20R.R.%20Martin"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "A Song of Ice and Fire",
+      "verified_at": null
+    },
+    "80:Malazan Universe|Steven Erikson and Ian C. Esslemont": {
+      "author": "Steven Erikson and Ian C. Esslemont",
+      "book_id": 80,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Malazan%20Universe%20Steven%20Erikson%20and%20Ian%20C.%20Esslemont"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Malazan Universe",
+      "verified_at": null
+    },
+    "81:The Masquerade|Seth Dickinson": {
+      "author": "Seth Dickinson",
+      "book_id": 81,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Masquerade%20Seth%20Dickinson"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Masquerade",
+      "verified_at": null
+    },
+    "82:Middle-Earth Universe|J.R.R. Tolkien": {
+      "author": "J.R.R. Tolkien",
+      "book_id": 82,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Middle-Earth%20Universe%20J.R.R.%20Tolkien"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Middle-Earth Universe",
+      "verified_at": null
+    },
+    "83:Mistborn|Brandon Sanderson": {
+      "author": "Brandon Sanderson",
+      "book_id": 83,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Mistborn%20Brandon%20Sanderson"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Mistborn",
+      "verified_at": null
+    },
+    "84:The Murderbot Diaries|Martha Wells": {
+      "author": "Martha Wells",
+      "book_id": 84,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Murderbot%20Diaries%20Martha%20Wells"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Murderbot Diaries",
+      "verified_at": null
+    },
+    "85:The Name of the Wind|Patrick Rothfuss": {
+      "author": "Patrick Rothfuss",
+      "book_id": 85,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Name%20of%20the%20Wind%20Patrick%20Rothfuss"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Name of the Wind",
+      "verified_at": null
+    },
+    "86:Neuromancer|William Gibson": {
+      "author": "William Gibson",
+      "book_id": 86,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Neuromancer%20William%20Gibson"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Neuromancer",
+      "verified_at": null
+    },
+    "87:New Crobuzon|China Mieville": {
+      "author": "China Mieville",
+      "book_id": 87,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=New%20Crobuzon%20China%20Mieville"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "New Crobuzon",
+      "verified_at": null
+    },
+    "88:The Obelisk Gate|N.K. Jemisin": {
+      "author": "N.K. Jemisin",
+      "book_id": 88,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Obelisk%20Gate%20N.K.%20Jemisin"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Obelisk Gate",
+      "verified_at": null
+    },
+    "89:The Old Kingdom|Garth Nix": {
+      "author": "Garth Nix",
+      "book_id": 89,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Old%20Kingdom%20Garth%20Nix"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Old Kingdom",
+      "verified_at": null
+    },
+    "8:All Systems Red|Martha Wells": {
+      "author": "Martha Wells",
+      "book_id": 8,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=All%20Systems%20Red%20Martha%20Wells"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "All Systems Red",
+      "verified_at": null
+    },
+    "90:One Piece|Eiichiro Oda": {
+      "author": "Eiichiro Oda",
+      "book_id": 90,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=One%20Piece%20Eiichiro%20Oda"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "One Piece",
+      "verified_at": null
+    },
+    "91:Osten Ard Saga|Tad Williams": {
+      "author": "Tad Williams",
+      "book_id": 91,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Osten%20Ard%20Saga%20Tad%20Williams"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Osten Ard Saga",
+      "verified_at": null
+    },
+    "92:Pale|Wildbow": {
+      "author": "Wildbow",
+      "book_id": 92,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Pale%20Wildbow"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Pale",
+      "verified_at": null
+    },
+    "93:Percy Jackson and the Olympians|Rick Riordan": {
+      "author": "Rick Riordan",
+      "book_id": 93,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Percy%20Jackson%20and%20the%20Olympians%20Rick%20Riordan"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Percy Jackson and the Olympians",
+      "verified_at": null
+    },
+    "94:Piranesi|Susanna Clarke": {
+      "author": "Susanna Clarke",
+      "book_id": 94,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Piranesi%20Susanna%20Clarke"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Piranesi",
+      "verified_at": null
+    },
+    "95:The Poppy War|R.F. Kuang": {
+      "author": "R.F. Kuang",
+      "book_id": 95,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=The%20Poppy%20War%20R.F.%20Kuang"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "The Poppy War",
+      "verified_at": null
+    },
+    "96:Powder Mage|Brian McClellan": {
+      "author": "Brian McClellan",
+      "book_id": 96,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Powder%20Mage%20Brian%20McClellan"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Powder Mage",
+      "verified_at": null
+    },
+    "97:Project Hail Mary|Andy Weir": {
+      "author": "Andy Weir",
+      "book_id": 97,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Project%20Hail%20Mary%20Andy%20Weir"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Project Hail Mary",
+      "verified_at": null
+    },
+    "98:Realm of the Elderlings|Robin Hobb": {
+      "author": "Robin Hobb",
+      "book_id": 98,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Realm%20of%20the%20Elderlings%20Robin%20Hobb"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Realm of the Elderlings",
+      "verified_at": null
+    },
+    "99:Red Rising|Pierce Brown": {
+      "author": "Pierce Brown",
+      "book_id": 99,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=Red%20Rising%20Pierce%20Brown"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "Red Rising",
+      "verified_at": null
+    },
+    "9:American Gods|Neil Gaiman": {
+      "author": "Neil Gaiman",
+      "book_id": 9,
+      "fields": {
+        "bibliographic": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "cover": {
+          "confidence": "unverified",
+          "license": null,
+          "source_url": null
+        },
+        "editorial": {
+          "confidence": "editorial",
+          "match_method": "derived",
+          "source_url": "internal-rubric"
+        },
+        "goodreads": {
+          "confidence": "candidate",
+          "match_method": "search-link",
+          "source_url": "https://www.goodreads.com/search?q=American%20Gods%20Neil%20Gaiman"
+        },
+        "reddit_2025": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        },
+        "wikipedia": {
+          "confidence": "unverified",
+          "match_method": null,
+          "source_url": null
+        }
+      },
+      "review_notes": [],
+      "status": "unverified",
+      "title": "American Gods",
+      "verified_at": null
+    }
+  },
+  "schema_version": 1
+}

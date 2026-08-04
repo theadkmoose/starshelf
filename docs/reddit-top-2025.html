@@ -34,19 +34,20 @@
         Source thread:
         <a href="https://www.reddit.com/r/Fantasy/comments/1jjif55/rfantasy_top_novels_2025_results/" target="_blank" rel="noopener noreferrer">r/Fantasy Top Novels 2025 Results</a>
       </p>
+      <p class="source-note">The table is a curated extraction of published results. Verify rank, votes, and title grouping against the source thread.</p>
     </section>
 
     <section class="stats-grid" id="statsGrid"></section>
 
-    <section class="section-card">
-      <h3>What changed this cycle</h3>
+    <details class="section-card minimal-section">
+      <summary>What changed this cycle</summary>
       <div class="insight-grid" id="trendCards"></div>
-    </section>
+    </details>
 
-    <section class="section-card">
-      <h3>Reading strategy recommendations</h3>
+    <details class="section-card minimal-section">
+      <summary>Reading strategy recommendations</summary>
       <div class="insight-grid" id="recommendationCards"></div>
-    </section>
+    </details>
 
     <details class="section-card minimal-section">
       <summary>Commentary-derived signals</summary>
@@ -64,8 +65,8 @@
       <ul class="trend-list" id="dataCaveats"></ul>
     </details>
 
-    <section class="section-card">
-      <h3>Top 100 spotlight table</h3>
+    <details class="section-card minimal-section">
+      <summary>Top 100 spotlight table</summary>
       <p>
         Focused view of ranks 1-100, sorted by rank and tagged by movement.
       </p>
@@ -84,7 +85,7 @@
         </table>
       </div>
       <p class="source-note" id="top100Summary"></p>
-    </section>
+    </details>
 
     <section class="section-card">
       <h3>Rank table explorer</h3>
@@ -104,6 +105,17 @@
           <option value="20">20-49 votes</option>
           <option value="0">5-19 votes</option>
         </select>
+        <select id="rankRangeFilter">
+          <option value="all">All ranks</option>
+          <option value="25">Top 25</option>
+          <option value="50">Top 50</option>
+          <option value="100">Top 100</option>
+        </select>
+        <select id="sortFilter">
+          <option value="rank">Sort by rank</option>
+          <option value="votes">Sort by votes</option>
+          <option value="movement">Sort by movement</option>
+        </select>
       </div>
       <div class="data-table-wrap">
         <table class="data-table">
@@ -121,6 +133,7 @@
         </table>
       </div>
       <p class="source-note" id="tableSummary"></p>
+      <button id="loadMoreRowsButton" type="button" class="load-more-button" hidden>Load more rows</button>
     </section>
   </main>
 

@@ -19,15 +19,9 @@
     </nav>
   </header>
 
-  <section class="intro-panel">
-    <p>Search, filter, and save what you want to read next.</p>
-  </section>
-
-  <section class="award-spotlight" aria-label="Award collections">
-    <div class="panel-heading">
-      <h3>Jump into award lanes</h3>
-      <p>Quick filters for major award tracks.</p>
-    </div>
+  <details class="award-spotlight minimal-section" aria-label="Award collections">
+    <summary>Jump into award lanes</summary>
+    <p class="source-note">Quick filters for major award tracks.</p>
     <div class="award-spotlight-grid">
       <button class="award-spotlight-card" type="button" data-award="Hugo">
         <strong>Hugo books</strong>
@@ -38,21 +32,17 @@
         <span>Quiet, strange, and boundary-pushing fiction.</span>
       </button>
     </div>
-  </section>
+  </details>
 
-  <section class="recent-panel" aria-label="Recently viewed books">
-    <div class="panel-heading">
-      <h3>Recently viewed</h3>
-      <p>Continue where you left off.</p>
-    </div>
+  <details class="recent-panel minimal-section" aria-label="Recently viewed books">
+    <summary>Recently viewed</summary>
+    <p class="source-note">Continue where you left off.</p>
     <div id="recentlyViewedList" class="recent-list"></div>
-  </section>
+  </details>
 
-  <section class="controls-panel" aria-label="Catalog controls">
-    <div class="panel-heading">
-      <h3>Explore the catalog</h3>
-      <p>Use focused filters and sort modes.</p>
-    </div>
+  <details class="controls-panel minimal-section" aria-label="Catalog controls" open>
+    <summary>Explore the catalog</summary>
+    <p class="source-note">Use focused filters and sort modes.</p>
     <div class="control-grid">
       <label class="control-field control-field-wide">
         <span class="field-label">Search</span>
@@ -123,9 +113,10 @@
         <button id="resetButton">Reset filters</button>
       </div>
     </div>
-  </section>
+  </details>
 
-  <section class="library-grid" aria-label="Library preferences and personal filters">
+  <details class="library-grid minimal-section" aria-label="Library preferences and personal filters">
+    <summary>Library preferences</summary>
     <div id="preferencesBox" class="note-box">
       <h3>Reading signals</h3>
       <div id="preferenceChips"></div>
@@ -137,25 +128,24 @@
       <label class="toggle-row"><input type="checkbox" id="showCompletedOnly"> Completed only</label>
       <label class="toggle-row"><input type="checkbox" id="showHighConfidenceOnly"> High-confidence only</label>
     </div>
-  </section>
+  </details>
 
-  <section class="results-panel" aria-label="Catalog results">
-    <div id="topPicksBox" class="top-picks-box">
-      <h3>Top picks right now</h3>
-      <div id="topPicksList" class="recent-list"></div>
-    </div>
-    <div id="nextBestQueueBox" class="top-picks-box">
-      <h3>Next Best Reads queue <span id="queueModeChip" class="queue-mode-chip" aria-live="polite">Auto</span></h3>
+  <details class="results-panel minimal-section" aria-label="Catalog results" open>
+    <summary>Catalog results</summary>
+    <p class="source-note">Catalog metadata, scores, and recommendations are curated guidance. Confirm editions, availability, and external ratings with the linked sources.</p>
+    <details id="nextBestQueueBox" class="top-picks-box minimal-section" open>
+      <summary>Next Best Reads queue <span id="queueModeChip" class="queue-mode-chip" aria-live="polite">Auto</span></summary>
       <p class="source-note">Auto-generated from your current filters and preferences. Use arrows to promote or demote.</p>
       <div class="queue-controls">
         <label class="toggle-row"><input type="checkbox" id="lockNextBestQueue"> Lock queue order</label>
         <button type="button" id="regenerateQueueButton" class="queue-move">Regenerate from current filters</button>
       </div>
       <div id="nextBestQueueList" class="queue-list"></div>
-    </div>
+    </details>
     <p id="statusText"></p>
     <div id="books"></div>
-  </section>
+    <button id="loadMoreButton" type="button" class="load-more-button" hidden>Load more books</button>
+  </details>
 
   <script src="js/book-meta.js?v=20260803"></script>
   <script src="js/score.js?v=20260803"></script>

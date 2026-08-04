@@ -25,6 +25,7 @@
       <p>
         A concise tier list covering major novels and novellas, with score and rationale.
       </p>
+      <p class="source-note">This is an editorial ranking, not an authoritative bibliographic or critical record.</p>
       <div class="ranking-controls">
         <input id="kingSearch" placeholder="Search title or subgenre">
         <select id="kingTierFilter">
@@ -41,6 +42,13 @@
           <option value="Collection">Collection</option>
         </select>
       </div>
+      <nav class="tier-jumps" aria-label="Jump to tier">
+        <button type="button" data-tier="all">All</button>
+        <button type="button" data-tier="S">S tier</button>
+        <button type="button" data-tier="A">A tier</button>
+        <button type="button" data-tier="B">B tier</button>
+        <button type="button" data-tier="C">C tier</button>
+      </nav>
     </section>
 
     <details class="methodology-card minimal-section">
@@ -59,7 +67,8 @@
 
     <section class="summary-grid" id="summaryGrid"></section>
 
-    <section class="reader-guides">
+    <details class="reader-guides minimal-section">
+      <summary>Reader guides</summary>
       <article class="guide-card">
         <h3>Best for horror readers</h3>
         <p>The Shining, It, Pet Sematary, Misery, The Mist.</p>
@@ -72,12 +81,12 @@
         <h3>Most influential works</h3>
         <p>Carrie, The Stand, Salem’s Lot, The Shining, It.</p>
       </article>
-    </section>
+    </details>
 
-    <section class="starter-card">
-      <h3>Best starter picks</h3>
+    <details class="starter-card minimal-section">
+      <summary>Best starter picks</summary>
       <div class="starter-grid" id="starterGrid"></div>
-    </section>
+    </details>
 
     <details class="matrix-card minimal-section">
       <summary>Best by subgenre</summary>
@@ -92,7 +101,7 @@
       <div><strong>C</strong> — interesting or effective, but comparatively lesser in impact.</div>
     </details>
 
-    <section id="rankingList"></section>
+    <section id="rankingList" aria-live="polite"></section>
   </main>
 
   <script src="js/nav.js"></script>

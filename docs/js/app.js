@@ -24,14 +24,37 @@ const recentlyViewedKey = "spec-fiction-recently-viewed";
 const nextBestQueueKey = "spec-fiction-next-best-queue";
 const nextBestQueueLockedKey = "spec-fiction-next-best-queue-locked";
 const coverCacheKey = "spec-fiction-cover-cache";
+const homeStateKey = "spec-fiction-home-state";
+const pageSize = 24;
 const bookMetaUtils = window.BookMetaUtils;
 const scoreUtils = window.ScoreUtils;
+let visibleBookCount = pageSize;
+let searchDebounceTimer;
+let filterCache = new Map();
+const localCoverByTitle = {
+  "the fifth season": "images/covers/cover_1.svg",
+  "dune": "images/covers/cover_2.svg",
+  "the name of the wind": "images/covers/cover_3.svg",
+  "left hand of darkness": "images/covers/cover_15.svg",
+  "the left hand of darkness": "images/covers/cover_4.svg",
+  "the way of kings": "images/covers/cover_10.svg",
+  "the obelisk gate": "images/covers/cover_11.svg",
+  "the stone sky": "images/covers/cover_12.svg",
+  "a memory called empire": "images/covers/cover_13.svg",
+  "children of time": "images/covers/cover_14.svg",
+  "the city & the city": "images/covers/cover_16.svg",
+  "all systems red": "images/covers/cover_17.svg",
+  "a desolation called peace": "images/covers/cover_18.svg",
+  "neuromancer": "images/covers/cover_20.svg",
+  "anathem": "images/covers/cover_21.svg",
+  "a fire upon the deep": "images/covers/cover_22.svg"
+};
 
 fetch("books.json", { cache: "no-store" })
   .then(response => response.json())
   .then(async (books) => {
     const cleanedBooks = bookMetaUtils.cleanCatalog(books);
-    allBooks = cleanedBooks.map(enrichBook);
+    allBooks = cleanedBooks.map(enrichBook).map(indexBook);
     populateAwardFilter();
     populateGenreFilter();
     populateThemeFilter();
@@ -40,18 +63,8 @@ fetch("books.json", { cache: "no-store" })
     displayBooks(allBooks);
     renderRecentlyViewed();
 
-    const cacheHydrated = applyCachedCovers(allBooks);
-    if (cacheHydrated > 0) {
-      displayBooks(getFilteredBooks());
-    }
-
-    const updated = await hydrateMissingCovers(allBooks, 80, () => {
-      displayBooks(getFilteredBooks());
-    });
-
-    if (updated > 0 && cacheHydrated === 0) {
-      displayBooks(getFilteredBooks());
-    }
+    restoreHomeState();
+    displayBooks(getFilteredBooks());
   })
   .catch(error => {
     console.error("Error loading books:", error);
@@ -67,8 +80,95 @@ function getCoverCache() {
   }
 }
 
+function localCoverUrl(book) {
+  const titleKey = bookMetaUtils.normalizeTitle(book.title);
+  return localCoverByTitle[titleKey] || "images/placeholder-cover.svg";
+}
+
 function setCoverCache(map) {
   localStorage.setItem(coverCacheKey, JSON.stringify(map));
+}
+
+function getHomeState() {
+  try {
+    return JSON.parse(localStorage.getItem(homeStateKey) || "{}") || {};
+  } catch {
+    return {};
+  }
+}
+
+function saveHomeState() {
+  const controls = {
+    search: searchInput.value,
+    award: awardFilter.value,
+    genre: genreFilter.value,
+    theme: themeFilter.value,
+    type: typeFilter.value,
+    year: yearFilter.value,
+    sort: sortOrder.value,
+    quality: qualityFloor.value,
+    favorites: showFavoritesOnly.checked,
+    completed: showCompletedOnly.checked,
+    highConfidence: showHighConfidenceOnly.checked
+  };
+  const panels = [...document.querySelectorAll("details.minimal-section")].map((panel, index) => ({
+    index,
+    open: panel.open
+  }));
+  localStorage.setItem(homeStateKey, JSON.stringify({ controls, panels }));
+}
+
+function restoreHomeState() {
+  const state = getHomeState();
+  const controls = state.controls || {};
+  searchInput.value = controls.search || "";
+  awardFilter.value = controls.award || "all";
+  genreFilter.value = controls.genre || "all";
+  themeFilter.value = controls.theme || "all";
+  typeFilter.value = controls.type || "all";
+  yearFilter.value = controls.year || "";
+  sortOrder.value = controls.sort || "overallScore";
+  qualityFloor.value = controls.quality || "0";
+  showFavoritesOnly.checked = Boolean(controls.favorites);
+  showCompletedOnly.checked = Boolean(controls.completed);
+  showHighConfidenceOnly.checked = Boolean(controls.highConfidence);
+  (state.panels || []).forEach(({ index, open }) => {
+    const panel = document.querySelectorAll("details.minimal-section")[index];
+    if (panel) panel.open = Boolean(open);
+  });
+}
+
+function syncUrlState() {
+  const params = new URLSearchParams();
+  const values = {
+    q: searchInput.value,
+    award: awardFilter.value,
+    genre: genreFilter.value,
+    theme: themeFilter.value,
+    type: typeFilter.value,
+    year: yearFilter.value,
+    sort: sortOrder.value,
+    quality: qualityFloor.value,
+    favorites: showFavoritesOnly.checked ? "1" : "",
+    completed: showCompletedOnly.checked ? "1" : "",
+    confidence: showHighConfidenceOnly.checked ? "1" : ""
+  };
+  Object.entries(values).forEach(([key, value]) => {
+    if (value && value !== "all" && value !== "overallScore" && value !== "0") params.set(key, value);
+  });
+  history.replaceState(null, "", `${location.pathname}${params.size ? `?${params}` : ""}`);
+}
+
+function indexBook(book) {
+  return {
+    ...book,
+    searchText: [book.title, book.author, book.series].filter(Boolean).join(" ").toLowerCase(),
+    awardText: String(book.award_summary || "").toLowerCase(),
+    genreTagsLower: (book.genreTags || getBookGenreTags(book)).map((tag) => tag.toLowerCase()),
+    themeTagsLower: getBookTags(book).map((tag) => tag.toLowerCase()),
+    yearText: String(book.year || ""),
+    typeValue: Number(book.standalone) === 1 || book.standalone === true ? "standalone" : "series"
+  };
 }
 
 function pause(ms) {
@@ -695,7 +795,8 @@ function populatePreferenceChips() {
 }
 
 function refreshPreferenceScores() {
-  allBooks = allBooks.map(enrichBook);
+  allBooks = allBooks.map(enrichBook).map(indexBook);
+  filterCache.clear();
 }
 
 function getFilteredBooks() {
@@ -711,35 +812,38 @@ function getFilteredBooks() {
   const minimumQuality = Number(qualityFloor.value || 0);
   const favoriteIds = new Set(getFavoriteIds());
   const completedIds = new Set(getCompletedIds());
+  const cacheKey = JSON.stringify({
+    query, awardSelection, genreSelection, themeSelection, typeSelection, yearSelection,
+    favoritesOnly, completedOnly, highConfidenceOnly, minimumQuality,
+    favorites: [...favoriteIds], completed: [...completedIds]
+  });
+  const cached = filterCache.get(cacheKey);
+  if (cached) return cached;
 
-  return allBooks.filter(book => {
-    const title = (book.title || "").toLowerCase();
-    const author = (book.author || "").toLowerCase();
-    const series = (book.series || "").toLowerCase();
-    const awardSummary = (book.award_summary || "").toLowerCase();
-    const genreTags = (book.genreTags || getBookGenreTags(book)).map(tag => tag.toLowerCase());
-    const themeTags = getBookTags(book).map(tag => tag.toLowerCase());
-    const yearValue = String(book.year || "");
-    const typeValue = Number(book.standalone) === 1 || book.standalone === true ? "standalone" : "series";
+  const filtered = allBooks.filter(book => {
     const matchesFavorites = !favoritesOnly || favoriteIds.has(Number(book.id));
     const matchesCompleted = !completedOnly || completedIds.has(Number(book.id));
 
-    const matchesQuery = title.includes(query) || author.includes(query) || series.includes(query);
-    const matchesAward = awardSelection === "all" || awardSummary.includes(awardSelection.toLowerCase());
-    const matchesGenre = genreSelection === "all" || genreTags.includes(genreSelection.toLowerCase());
-    const matchesTheme = themeSelection === "all" || themeTags.includes(themeSelection.toLowerCase());
-    const matchesType = typeSelection === "all" || typeValue === typeSelection;
-    const matchesYear = !yearSelection || yearValue === yearSelection;
+    const matchesQuery = book.searchText.includes(query);
+    const matchesAward = awardSelection === "all" || book.awardText.includes(awardSelection.toLowerCase());
+    const matchesGenre = genreSelection === "all" || book.genreTagsLower.includes(genreSelection.toLowerCase());
+    const matchesTheme = themeSelection === "all" || book.themeTagsLower.includes(themeSelection.toLowerCase());
+    const matchesType = typeSelection === "all" || book.typeValue === typeSelection;
+    const matchesYear = !yearSelection || book.yearText === yearSelection;
     const matchesQuality = !minimumQuality || (Number.isFinite(book.overallScore) && book.overallScore >= minimumQuality);
     const matchesConfidence = !highConfidenceOnly || ((book.scoreConfidence || 0) >= 60 && (book.signalCount || 0) >= 3);
 
     return matchesQuery && matchesAward && matchesGenre && matchesTheme && matchesType && matchesYear && matchesFavorites && matchesCompleted && matchesQuality && matchesConfidence;
   });
+  filterCache.set(cacheKey, filtered);
+  if (filterCache.size > 20) filterCache = new Map([[cacheKey, filtered]]);
+  return filtered;
 }
 
 function displayBooks(booksToDisplay) {
-  let container = document.getElementById("books");
-  container.innerHTML = "";
+  const container = document.getElementById("books");
+  const loadMoreButton = document.getElementById("loadMoreButton");
+  container.replaceChildren();
 
   const sortKey = sortOrder.value;
   const sortedBooks = [...booksToDisplay].sort((a, b) => {
@@ -752,8 +856,8 @@ function displayBooks(booksToDisplay) {
     return (b.overallScore || 0) - (a.overallScore || 0);
   });
 
-  statusText.textContent = `${sortedBooks.length} book${sortedBooks.length === 1 ? "" : "s"} shown`;
-  renderTopPicks(sortedBooks);
+  const visibleBooks = sortedBooks.slice(0, visibleBookCount);
+  statusText.textContent = `${sortedBooks.length} book${sortedBooks.length === 1 ? "" : "s"} shown${visibleBooks.length < sortedBooks.length ? `; showing first ${visibleBooks.length}` : ""}`;
   renderNextBestQueue(sortedBooks);
 
   if (sortedBooks.length === 0) {
@@ -766,7 +870,7 @@ function displayBooks(booksToDisplay) {
     return;
   }
 
-  sortedBooks.forEach(book => {
+  const cards = visibleBooks.map(book => {
     const awardSummary = book.award_summary || "None";
     const yearText = book.year || "N/A";
     const seriesText = book.series || "N/A";
@@ -794,27 +898,27 @@ function displayBooks(booksToDisplay) {
     const fitText = getSelectedPreferences().length
       ? `${Math.round((book.personalFit || 0) * 100)}% fit`
       : "No fit profile";
-    const coverHtml = book.cover_url
-      ? `<img src="${book.cover_url}" alt="${book.title}" class="cover-image" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder-cover.svg';this.alt='Cover unavailable';">`
-      : `<img src="images/placeholder-cover.svg" alt="Cover unavailable" class="cover-image">`;
+    const coverUrl = book.cover_url || localCoverUrl(book);
+    const coverHtml = `<img src="${coverUrl}" alt="${book.title}" class="cover-image" loading="lazy" onerror="this.onerror=null;this.src='images/placeholder-cover.svg';this.alt='Cover unavailable';">`;
 
-    container.innerHTML += `
+    return `
       <div class="book">
         <div class="book-card-layout">
           <div class="book-cover-cell">${coverHtml}</div>
           <div class="book-text-cell">
             <h2><a href="book.html?id=${book.id}">${book.title}</a></h2>
             <p><strong>Author:</strong> ${book.author || "Unknown"}</p>
-            <p><strong>Year:</strong> ${yearText}</p>
-            <p><strong>Series:</strong> ${seriesText}</p>
-            <p><strong>Type:</strong> ${typeText}</p>
-            <p><strong>Genre:</strong> ${genreText}</p>
-            <p><strong>Motifs / concerns:</strong> ${themesText}</p>
-            <p><strong>Audiobook:</strong> ${audiobookRatingText} by ${audiobookNarratorText}</p>
-            <p><strong>Overall score:</strong> ${overallScoreText}</p>
-            <p><strong>Quality tier:</strong> ${qualityBadge} (${confidenceText}, ${book.signalCount || 0} signals)</p>
-            <p><strong>Personal fit:</strong> ${fitText}</p>
-            <p><strong>Awards:</strong> ${summarizeAwards(awardSummary)}</p>
+            <p><strong>Year:</strong> ${yearText} | <strong>Series:</strong> ${seriesText}</p>
+            <p><strong>Genre:</strong> ${genreText} | <strong>Score:</strong> ${overallScoreText}</p>
+            <details class="book-card-details">
+              <summary>More details</summary>
+              <p><strong>Type:</strong> ${typeText}</p>
+              <p><strong>Motifs / concerns:</strong> ${themesText}</p>
+              <p><strong>Audiobook:</strong> ${audiobookRatingText} by ${audiobookNarratorText}</p>
+              <p><strong>Quality tier:</strong> ${qualityBadge} (${confidenceText}, ${book.signalCount || 0} signals)</p>
+              <p><strong>Personal fit:</strong> ${fitText}</p>
+              <p><strong>Awards:</strong> ${summarizeAwards(awardSummary)}</p>
+            </details>
             <p>
               <button class="library-toggle favorite-toggle" data-book-id="${book.id}" data-mode="favorite">${favoriteButtonText}</button>
               <button class="library-toggle completed-toggle" data-book-id="${book.id}" data-mode="completed">${completedButtonText}</button>
@@ -824,33 +928,16 @@ function displayBooks(booksToDisplay) {
       </div>
     `;
   });
+  container.innerHTML = cards.join("");
+  loadMoreButton.hidden = visibleBooks.length >= sortedBooks.length;
 
-  document.querySelectorAll(".favorite-toggle").forEach(button => {
-    button.addEventListener("click", () => {
-      const bookId = Number(button.dataset.bookId);
-      const favoriteIds = getFavoriteIds();
-      const next = favoriteIds.includes(bookId)
-        ? favoriteIds.filter(id => id !== bookId)
-        : [...favoriteIds, bookId];
-      saveFavoriteIds(next);
-      displayBooks(getFilteredBooks());
-    });
-  });
-
-  document.querySelectorAll(".completed-toggle").forEach(button => {
-    button.addEventListener("click", () => {
-      const bookId = Number(button.dataset.bookId);
-      const completedIds = getCompletedIds();
-      const next = completedIds.includes(bookId)
-        ? completedIds.filter(id => id !== bookId)
-        : [...completedIds, bookId];
-      saveCompletedIds(next);
-      displayBooks(getFilteredBooks());
-    });
-  });
 }
 
 function applyFilters() {
+  visibleBookCount = pageSize;
+  filterCache.clear();
+  saveHomeState();
+  syncUrlState();
   displayBooks(getFilteredBooks());
 }
 
@@ -872,7 +959,10 @@ document.querySelectorAll(".award-spotlight-card").forEach(button => {
   });
 });
 
-searchInput.addEventListener("input", applyFilters);
+searchInput.addEventListener("input", () => {
+  clearTimeout(searchDebounceTimer);
+  searchDebounceTimer = setTimeout(applyFilters, 200);
+});
 awardFilter.addEventListener("change", applyFilters);
 genreFilter.addEventListener("change", applyFilters);
 themeFilter.addEventListener("change", applyFilters);
@@ -896,5 +986,34 @@ resetButton.addEventListener("click", () => {
   showFavoritesOnly.checked = false;
   showCompletedOnly.checked = false;
   showHighConfidenceOnly.checked = false;
-  displayBooks(allBooks);
+  applyFilters();
+});
+
+document.getElementById("loadMoreButton").addEventListener("click", () => {
+  visibleBookCount += pageSize;
+  displayBooks(getFilteredBooks());
+});
+
+document.getElementById("books").addEventListener("click", (event) => {
+  const button = event.target.closest(".library-toggle");
+  if (!button) return;
+
+  const bookId = Number(button.dataset.bookId);
+  if (button.dataset.mode === "favorite") {
+    const favoriteIds = getFavoriteIds();
+    saveFavoriteIds(favoriteIds.includes(bookId)
+      ? favoriteIds.filter((id) => id !== bookId)
+      : [...favoriteIds, bookId]);
+  } else if (button.dataset.mode === "completed") {
+    const completedIds = getCompletedIds();
+    saveCompletedIds(completedIds.includes(bookId)
+      ? completedIds.filter((id) => id !== bookId)
+      : [...completedIds, bookId]);
+  }
+  filterCache.clear();
+  displayBooks(getFilteredBooks());
+});
+
+document.querySelectorAll("details.minimal-section").forEach((panel) => {
+  panel.addEventListener("toggle", saveHomeState);
 });
