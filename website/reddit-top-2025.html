@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reddit Top Fantasy 2025 Analysis</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="reddit2025">
+  <header class="page-header">
+    <div>
+      <h1>Speculative Fiction Explorer</h1>
+      <p class="page-subtitle">r/Fantasy 2025 results: trends, movement, and reading paths.</p>
+    </div>
+    <nav class="site-nav">
+      <a class="nav-link" data-page="home" href="index.html">Home</a>
+      <a class="nav-link" data-page="stephen" href="stephen-king.html">Stephen King</a>
+      <a class="nav-link" data-page="reddit2025" href="reddit-top-2025.html">Reddit 2025</a>
+    </nav>
+  </header>
+
+  <main class="reddit-page">
+    <section class="reddit-hero">
+      <h2>r/Fantasy Top Novels 2025: comprehensive read</h2>
+      <p>
+        Built from the published results table and high-signal community discussion.
+      </p>
+      <div class="reddit-meta">
+        <span class="reddit-meta-chip">Poll round: 2025</span>
+        <span class="reddit-meta-chip">Source: r/Fantasy results thread</span>
+        <span class="reddit-meta-chip">Includes rank-change dynamics</span>
+      </div>
+      <p class="source-note">
+        Source thread:
+        <a href="https://www.reddit.com/r/Fantasy/comments/1jjif55/rfantasy_top_novels_2025_results/" target="_blank" rel="noopener noreferrer">r/Fantasy Top Novels 2025 Results</a>
+      </p>
+    </section>
+
+    <section class="stats-grid" id="statsGrid"></section>
+
+    <section class="section-card">
+      <h3>What changed this cycle</h3>
+      <div class="insight-grid" id="trendCards"></div>
+    </section>
+
+    <section class="section-card">
+      <h3>Reading strategy recommendations</h3>
+      <div class="insight-grid" id="recommendationCards"></div>
+    </section>
+
+    <details class="section-card minimal-section">
+      <summary>Commentary-derived signals</summary>
+      <p>
+        Recurring themes from high-voted comments.
+      </p>
+      <ul class="trend-list" id="commentarySignals"></ul>
+    </details>
+
+    <details class="section-card caveat-card minimal-section">
+      <summary>Data quality caveats and aggregation edge cases</summary>
+      <p>
+        Use movement as directional signal, not an absolute measurement.
+      </p>
+      <ul class="trend-list" id="dataCaveats"></ul>
+    </details>
+
+    <section class="section-card">
+      <h3>Top 100 spotlight table</h3>
+      <p>
+        Focused view of ranks 1-100, sorted by rank and tagged by movement.
+      </p>
+      <div class="data-table-wrap">
+        <table class="data-table compact-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Title or series</th>
+              <th>Author</th>
+              <th>Votes</th>
+              <th>Movement</th>
+            </tr>
+          </thead>
+          <tbody id="top100TableBody"></tbody>
+        </table>
+      </div>
+      <p class="source-note" id="top100Summary"></p>
+    </section>
+
+    <section class="section-card">
+      <h3>Rank table explorer</h3>
+      <div class="table-toolbar">
+        <input id="rowSearch" type="text" placeholder="Search title or author">
+        <select id="changeFilter">
+          <option value="all">All movement</option>
+          <option value="up">Risers</option>
+          <option value="down">Decliners</option>
+          <option value="new">New entries</option>
+          <option value="flat">Near-stable (-1 to +1)</option>
+        </select>
+        <select id="voteBandFilter">
+          <option value="all">All vote bands</option>
+          <option value="100">100+ votes</option>
+          <option value="50">50-99 votes</option>
+          <option value="20">20-49 votes</option>
+          <option value="0">5-19 votes</option>
+        </select>
+      </div>
+      <div class="data-table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Title or series</th>
+              <th>Author</th>
+              <th>Votes</th>
+              <th>Rank change</th>
+              <th>Signal</th>
+            </tr>
+          </thead>
+          <tbody id="rankTableBody"></tbody>
+        </table>
+      </div>
+      <p class="source-note" id="tableSummary"></p>
+    </section>
+  </main>
+
+  <script src="js/nav.js"></script>
+  <script src="js/reddit-top-2025.js"></script>
+</body>
+</html>

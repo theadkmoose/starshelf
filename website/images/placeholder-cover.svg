@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="480" viewBox="0 0 320 480">
+  <rect width="320" height="480" rx="12" fill="#131a2a"/>
+  <rect x="18" y="18" width="284" height="444" rx="8" fill="#1f2945" stroke="#4b5f9d" stroke-width="2"/>
+  <text x="160" y="170" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#eef3ff">Speculative Fiction</text>
+  <text x="160" y="215" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#c8d5ff">No cover image</text>
+  <text x="160" y="255" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#9fb1ea">available in source data</text>
+</svg>

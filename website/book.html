@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Details</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="book">
+  <header class="page-header">
+    <div>
+      <h1>Book Details</h1>
+      <p class="page-subtitle">Core metadata, recommendations, and personal notes.</p>
+    </div>
+    <nav class="site-nav">
+      <a class="nav-link" data-page="home" href="index.html">Home</a>
+      <a class="nav-link" data-page="stephen" href="stephen-king.html">Stephen King</a>
+      <a class="nav-link" data-page="reddit2025" href="reddit-top-2025.html">Reddit 2025</a>
+    </nav>
+  </header>
+
+  <main class="detail-page">
+    <div class="back-link-row">
+      <a class="back-link" href="index.html">Back to explorer</a>
+    </div>
+
+    <section class="recent-panel" aria-label="Recently viewed books">
+      <div class="panel-heading">
+        <h3>Last opened</h3>
+        <p>Recent stops.</p>
+      </div>
+      <div id="recentlyViewedList" class="recent-list"></div>
+    </section>
+
+    <div id="bookDetail"></div>
+
+    <div id="recommendations" class="note-box">
+      <h3>Recommended Similar Books</h3>
+      <div id="recommendationList"></div>
+    </div>
+
+    <div id="noteBox" class="note-box">
+      <h3>My Notes</h3>
+      <textarea id="noteInput" rows="8" placeholder="Write your private notes here..."></textarea>
+      <button id="saveNoteButton">Save Note</button>
+    </div>
+  </main>
+
+  <script src="js/book-meta.js?v=20260803"></script>
+  <script src="js/score.js?v=20260803"></script>
+  <script src="js/nav.js?v=20260803"></script>
+  <script src="js/book.js?v=20260803"></script>
+</body>
+</html>

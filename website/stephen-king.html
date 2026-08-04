@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephen King Ranking</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="stephen">
+  <header class="page-header">
+    <div>
+      <h1>Speculative Fiction Explorer</h1>
+      <p class="page-subtitle">Stephen King rankings, tiers, and quick starter paths.</p>
+    </div>
+    <nav class="site-nav">
+      <a class="nav-link" data-page="home" href="index.html">Home</a>
+      <a class="nav-link" data-page="stephen" href="stephen-king.html">Stephen King</a>
+      <a class="nav-link" data-page="reddit2025" href="reddit-top-2025.html">Reddit 2025</a>
+    </nav>
+  </header>
+
+  <main class="ranking-page">
+    <section class="ranking-hero">
+      <h2>Stephen King catalog ranking: S tier to C tier</h2>
+      <p>
+        A concise tier list covering major novels and novellas, with score and rationale.
+      </p>
+      <div class="ranking-controls">
+        <input id="kingSearch" placeholder="Search title or subgenre">
+        <select id="kingTierFilter">
+          <option value="all">All tiers</option>
+          <option value="S">S tier</option>
+          <option value="A">A tier</option>
+          <option value="B">B tier</option>
+          <option value="C">C tier</option>
+        </select>
+        <select id="kingKindFilter">
+          <option value="all">All formats</option>
+          <option value="Novel">Novel</option>
+          <option value="Novella">Novella</option>
+          <option value="Collection">Collection</option>
+        </select>
+      </div>
+    </section>
+
+    <details class="methodology-card minimal-section">
+      <summary>How this ranking is framed</summary>
+      <ul>
+        <li>Weighted toward craft, atmosphere, architecture, emotional impact, and influence.</li>
+        <li>Focused on major novels and novellas, plus select collections.</li>
+        <li>Practical guide first, final authority second.</li>
+      </ul>
+    </details>
+
+    <details class="rubric-card minimal-section">
+      <summary>Weighted rubric</summary>
+      <div class="rubric-grid" id="rubricGrid"></div>
+    </details>
+
+    <section class="summary-grid" id="summaryGrid"></section>
+
+    <section class="reader-guides">
+      <article class="guide-card">
+        <h3>Best for horror readers</h3>
+        <p>The Shining, It, Pet Sematary, Misery, The Mist.</p>
+      </article>
+      <article class="guide-card">
+        <h3>Best for fantasy and mythic readers</h3>
+        <p>The Dark Tower books, The Talisman, The Green Mile, Doctor Sleep.</p>
+      </article>
+      <article class="guide-card">
+        <h3>Most influential works</h3>
+        <p>Carrie, The Stand, Salem’s Lot, The Shining, It.</p>
+      </article>
+    </section>
+
+    <section class="starter-card">
+      <h3>Best starter picks</h3>
+      <div class="starter-grid" id="starterGrid"></div>
+    </section>
+
+    <details class="matrix-card minimal-section">
+      <summary>Best by subgenre</summary>
+      <div class="matrix-grid" id="matrixGrid"></div>
+    </details>
+
+    <details class="tier-legend minimal-section">
+      <summary>Tier legend</summary>
+      <div><strong>S</strong> — essential canon, landmark craft, enduring influence.</div>
+      <div><strong>A</strong> — highly rewarding, often classic, strong on mood and execution.</div>
+      <div><strong>B</strong> — strong and entertaining, but more uneven or less durable.</div>
+      <div><strong>C</strong> — interesting or effective, but comparatively lesser in impact.</div>
+    </details>
+
+    <section id="rankingList"></section>
+  </main>
+
+  <script src="js/nav.js"></script>
+  <script src="js/stephen-king.js"></script>
+</body>
+</html>

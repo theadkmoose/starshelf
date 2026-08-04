@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speculative Fiction Database</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <header class="page-header">
+    <div>
+      <h1>Speculative Fiction Explorer</h1>
+      <p class="page-subtitle">A fast, focused speculative fiction catalog.</p>
+    </div>
+    <nav class="site-nav">
+      <a class="nav-link" data-page="home" href="index.html">Home</a>
+      <a class="nav-link" data-page="stephen" href="stephen-king.html">Stephen King</a>
+      <a class="nav-link" data-page="reddit2025" href="reddit-top-2025.html">Reddit 2025</a>
+    </nav>
+  </header>
+
+  <section class="intro-panel">
+    <p>Search, filter, and save what you want to read next.</p>
+  </section>
+
+  <section class="award-spotlight" aria-label="Award collections">
+    <div class="panel-heading">
+      <h3>Jump into award lanes</h3>
+      <p>Quick filters for major award tracks.</p>
+    </div>
+    <div class="award-spotlight-grid">
+      <button class="award-spotlight-card" type="button" data-award="Hugo">
+        <strong>Hugo books</strong>
+        <span>Winners and finalists across the canon.</span>
+      </button>
+      <button class="award-spotlight-card" type="button" data-award="Nebula">
+        <strong>Nebula books</strong>
+        <span>Quiet, strange, and boundary-pushing fiction.</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="recent-panel" aria-label="Recently viewed books">
+    <div class="panel-heading">
+      <h3>Recently viewed</h3>
+      <p>Continue where you left off.</p>
+    </div>
+    <div id="recentlyViewedList" class="recent-list"></div>
+  </section>
+
+  <section class="controls-panel" aria-label="Catalog controls">
+    <div class="panel-heading">
+      <h3>Explore the catalog</h3>
+      <p>Use focused filters and sort modes.</p>
+    </div>
+    <div class="control-grid">
+      <label class="control-field control-field-wide">
+        <span class="field-label">Search</span>
+        <input id="search" placeholder="Search books, authors, or series">
+      </label>
+
+      <label class="control-field">
+        <span class="field-label">Award</span>
+        <select id="awardFilter">
+          <option value="all">All awards</option>
+        </select>
+      </label>
+
+      <label class="control-field">
+        <span class="field-label">Genre</span>
+        <select id="genreFilter">
+          <option value="all">All genres</option>
+        </select>
+      </label>
+
+      <label class="control-field">
+        <span class="field-label">Theme</span>
+        <select id="themeFilter">
+          <option value="all">All motifs / concerns</option>
+        </select>
+      </label>
+
+      <label class="control-field">
+        <span class="field-label">Book type</span>
+        <select id="typeFilter">
+          <option value="all">All types</option>
+          <option value="series">Series</option>
+          <option value="standalone">Standalone</option>
+        </select>
+      </label>
+
+      <label class="control-field">
+        <span class="field-label">Year</span>
+        <input id="yearFilter" type="number" placeholder="Any year">
+      </label>
+
+      <label class="control-field">
+        <span class="field-label">Sort</span>
+        <select id="sortOrder">
+          <option value="overallScore">Sort by overall score</option>
+          <option value="bestPick">Sort by personal pick score</option>
+          <option value="confidence">Sort by confidence</option>
+          <option value="overallRank">Sort by overall rank</option>
+          <option value="audiobookRank">Sort by audiobook rank</option>
+          <option value="redditRank">Sort by Reddit rank</option>
+          <option value="title">Sort by title</option>
+        </select>
+      </label>
+
+      <label class="control-field">
+        <span class="field-label">Minimum quality</span>
+        <select id="qualityFloor">
+          <option value="0">No minimum</option>
+          <option value="60">60+</option>
+          <option value="70">70+</option>
+          <option value="80">80+</option>
+          <option value="90">90+</option>
+        </select>
+      </label>
+
+      <div class="control-field control-action">
+        <span class="field-label">Actions</span>
+        <button id="resetButton">Reset filters</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="library-grid" aria-label="Library preferences and personal filters">
+    <div id="preferencesBox" class="note-box">
+      <h3>Reading signals</h3>
+      <div id="preferenceChips"></div>
+    </div>
+
+    <div id="libraryBox" class="note-box">
+      <h3>My Library</h3>
+      <label class="toggle-row"><input type="checkbox" id="showFavoritesOnly"> Favorites only</label>
+      <label class="toggle-row"><input type="checkbox" id="showCompletedOnly"> Completed only</label>
+      <label class="toggle-row"><input type="checkbox" id="showHighConfidenceOnly"> High-confidence only</label>
+    </div>
+  </section>
+
+  <section class="results-panel" aria-label="Catalog results">
+    <div id="topPicksBox" class="top-picks-box">
+      <h3>Top picks right now</h3>
+      <div id="topPicksList" class="recent-list"></div>
+    </div>
+    <div id="nextBestQueueBox" class="top-picks-box">
+      <h3>Next Best Reads queue <span id="queueModeChip" class="queue-mode-chip" aria-live="polite">Auto</span></h3>
+      <p class="source-note">Auto-generated from your current filters and preferences. Use arrows to promote or demote.</p>
+      <div class="queue-controls">
+        <label class="toggle-row"><input type="checkbox" id="lockNextBestQueue"> Lock queue order</label>
+        <button type="button" id="regenerateQueueButton" class="queue-move">Regenerate from current filters</button>
+      </div>
+      <div id="nextBestQueueList" class="queue-list"></div>
+    </div>
+    <p id="statusText"></p>
+    <div id="books"></div>
+  </section>
+
+  <script src="js/book-meta.js?v=20260803"></script>
+  <script src="js/score.js?v=20260803"></script>
+  <script src="js/nav.js?v=20260803"></script>
+  <script src="js/app.js?v=20260803"></script>
+</body>
+</html>
