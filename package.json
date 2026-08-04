@@ -1,1 +1,1 @@
-{"name":"starshelf","version":"1.0.0","private":true,"scripts":{"dev":"echo Static Hugo project"}}
+{"name":"starshelf","version":"1.0.0","private":true,"scripts":{"dev":"sleep infinity"}}
