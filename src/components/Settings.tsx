@@ -1,22 +1,17 @@
 "use client";
 
 import React from 'react';
-import { useTheme } from '../contexts/ThemeProvider';
+import { FiSun, FiMoon } from 'react-icons/fi';
 
-const Settings = () => {
-  const { theme, setTheme } = useTheme();
-
+const Settings = ({ onDarkModeToggle }: { onDarkModeToggle: () => void }) => {
   return (
-    <div>
-      <h2>Settings</h2>
-      <label>
-        <input
-          type="checkbox"
-          checked={theme === 'dark'}
-          onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
-        />
-        Dark Mode
-      </label>
+    <div className="bg-white rounded-lg shadow p-4">
+      <h2 className="text-xl font-bold mb-4">Settings</h2>
+      <div className="flex items-center space-x-4">
+        <button onClick={onDarkModeToggle}>
+          {darkMode ? <FiSun size={24} /> : <FiMoon size={24} />}
+        </button>
+      </div>
     </div>
   );
 };

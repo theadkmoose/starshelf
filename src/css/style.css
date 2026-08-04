@@ -1,0 +1,10 @@
+.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+.light-mode button, .dark-mode button {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}

@@ -1,41 +1,19 @@
 "use client";
 
-import React from 'react';
-import { ThemeProvider, useTheme } from './contexts/ThemeProvider';
-import Head from 'next/head';
+import React, { useState } from 'react';
+import Settings from './components/Settings';
 
-const styles = `
-  html.light {
-    background-color: #fff;
-    color: #333;
-  }
-  html.dark {
-    background-color: #121212;
-    color: #ccc;
-  }
-`;
-
-function MyApp({ Component, pageProps }) {
-  const { theme } = useTheme();
+const App = () => {
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
   return (
-    <>
-      <Head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Book Catalog</title>
-        <style>{styles}</style>
-      </Head>
-      <html className={theme}>
-        <body>
-          <ThemeProvider>
-            <Settings />
-            <Component {...pageProps} />
-          </ThemeProvider>
-        </body>
-      </html>
-    </>
+    <div className={darkMode ? 'dark-mode' : ''}>
+      <button onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? 'Turn Off Dark Mode' : 'Turn On Dark Mode'}
+      </button>
+      <Settings onDarkModeToggle={() => setDarkMode(!darkMode)} />
+    </div>
   );
-}
+};
 
-export default MyApp;
+export default App;
