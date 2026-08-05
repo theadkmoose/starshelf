@@ -1,34 +1,44 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
-import { supabase } from "./supabase";
+import { useEffect, useState } from 'react';
+import { supabase } from './supabase';
 
 function App() {
-  const [status, setStatus] = useState("Connecting to StarShelf...");
+  const [status, setStatus] = useState('Connecting to StarShelf…');
 
   useEffect(() => {
+    let active = true;
+
     async function testSupabase() {
-      const { error } = await supabase
-        .from("books")
-        .select("*")
-        .limit(1);
+      const { error } = await supabase.from('books').select('*').limit(1);
+
+      if (!active) return;
 
       if (error) {
-        setStatus(`Supabase connected, but books table is not ready yet.`);
-        console.error(error);
+        console.error('StarShelf Supabase check:', error);
+        setStatus('StarShelf is online. Your books database still needs to be set up.');
       } else {
-        setStatus("StarShelf is connected to Supabase!");
+        setStatus('StarShelf is connected to your books database.');
       }
     }
 
     testSupabase();
+    return () => {
+      active = false;
+    };
   }, []);
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">StarShelf</h1>
-      <p>{status}</p>
-    </div>
+    <main className="app-shell">
+      <section className="card" aria-live="polite">
+        <div className="logo" aria-hidden="true">★</div>
+        <h1>StarShelf</h1>
+        <p className="tagline">Your personal bookshelf, wherever you go.</p>
+        <div className="status">
+          <span className="status-dot" />
+          <span>{status}</span>
+        </div>
+        <p className="hint">Add StarShelf to your iPhone Home Screen from Safari for an app-like experience.</p>
+      </section>
+    </main>
   );
 }
 
