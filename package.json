@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.0",
-    "lodash": "^4.18.1",
+    "lodash": "^4.17.21",
     "react-hot-toast": "^2.6.0",
     "react-icons": "^5.7.0"
   },
