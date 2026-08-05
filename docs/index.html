@@ -1,23 +1,155 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>StarShelf</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="StarShelf">
+  <meta name="description" content="StarShelf — a personal speculative-fiction bookshelf and discovery tool.">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <link rel="stylesheet" href="./css/style.css">
+  <title>StarShelf</title>
 </head>
+<body data-page="home">
+  <header class="page-header">
+    <div>
+      <p class="eyebrow">STAR SHELF</p>
+      <h1>Speculative Fiction Explorer</h1>
+      <p class="page-subtitle">Find your next great book using ratings, awards, themes, and your personal shelf.</p>
+    </div>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="nav-link" data-page="home" href="./index.html">Explorer</a>
+      <a class="nav-link" data-page="stephen" href="./stephen-king.html">Stephen King</a>
+      <a class="nav-link" data-page="reddit2025" href="./reddit-top-2025.html">Reddit 2025</a>
+    </nav>
+  </header>
 
-<body>
-  <div id="app"></div>
+  <main class="home-page">
+    <section class="hero-card">
+      <div>
+        <span class="hero-badge">YOUR NEXT READ</span>
+        <h2>A bookshelf that helps you choose.</h2>
+        <p>Search the catalog, build a preference profile, save favorites, track completed books, and keep a ranked queue.</p>
+      </div>
+      <div class="hero-star" aria-hidden="true">★</div>
+    </section>
+
+    <section class="filter-panel" aria-label="Book filters">
+      <div class="filter-grid">
+        <label class="wide-field">Search
+          <input id="search" type="search" placeholder="Title, author, or series…" autocomplete="off">
+        </label>
+        <label>Award
+          <select id="awardFilter"><option value="all">All awards</option></select>
+        </label>
+        <label>Genre
+          <select id="genreFilter"><option value="all">All genres</option></select>
+        </label>
+        <label>Motif / concern
+          <select id="themeFilter"><option value="all">All motifs / concerns</option></select>
+        </label>
+        <label>Format
+          <select id="typeFilter">
+            <option value="all">All formats</option>
+            <option value="standalone">Standalone</option>
+            <option value="series">Series</option>
+          </select>
+        </label>
+        <label>Year
+          <input id="yearFilter" inputmode="numeric" placeholder="e.g. 2020">
+        </label>
+        <label>Sort
+          <select id="sortOrder">
+            <option value="overallScore">Overall score</option>
+            <option value="bestPick">Best personal pick</option>
+            <option value="confidence">Confidence</option>
+            <option value="overallRank">Overall rank</option>
+            <option value="audiobookRank">Audiobook rank</option>
+            <option value="redditRank">Reddit rank</option>
+            <option value="title">Title</option>
+          </select>
+        </label>
+        <label>Minimum quality
+          <select id="qualityFloor">
+            <option value="0">Any</option>
+            <option value="60">60+</option>
+            <option value="70">70+</option>
+            <option value="80">80+</option>
+            <option value="90">90+</option>
+          </select>
+        </label>
+      </div>
+      <div class="filter-actions">
+        <label class="check"><input id="showFavoritesOnly" type="checkbox"> Favorites only</label>
+        <label class="check"><input id="showCompletedOnly" type="checkbox"> Completed only</label>
+        <label class="check"><input id="showHighConfidenceOnly" type="checkbox"> High confidence</label>
+        <button id="resetButton" class="secondary-button" type="button">Reset filters</button>
+      </div>
+    </section>
+
+    <section class="preference-panel minimal-section" aria-label="Personal preferences">
+      <div class="panel-heading">
+        <div>
+          <h2>My taste profile</h2>
+          <p>Choose motifs and concerns you want the ranking to favor.</p>
+        </div>
+        <span class="mini-note">Saved on this device</span>
+      </div>
+      <div id="preferenceChips" class="preference-chips"></div>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="dashboard-card">
+        <div class="panel-heading">
+          <div><h2>Top picks</h2><p>Highest-scoring books in the current view.</p></div>
+        </div>
+        <div id="topPicksList" class="recent-list"></div>
+      </article>
+      <article class="dashboard-card">
+        <div class="panel-heading">
+          <div><h2>Next-best queue</h2><p>Your short list, kept on this device.</p></div>
+          <span id="queueModeChip" class="mode-chip">Auto</span>
+        </div>
+        <div class="queue-toolbar">
+          <label class="check"><input id="lockNextBestQueue" type="checkbox"> Lock queue</label>
+          <button id="regenerateQueueButton" class="secondary-button" type="button">Regenerate</button>
+        </div>
+        <div id="nextBestQueueList" class="queue-list"></div>
+      </article>
+    </section>
+
+    <section class="recent-panel minimal-section" aria-label="Recently viewed books">
+      <div class="panel-heading">
+        <div><h2>Recently viewed</h2><p>Quick access to the books you opened most recently.</p></div>
+      </div>
+      <div id="recentlyViewedList" class="recent-list"></div>
+    </section>
+
+    <section class="results-header">
+      <div>
+        <span class="eyebrow">CATALOG</span>
+        <h2>Books</h2>
+      </div>
+      <p id="statusText" aria-live="polite">Loading catalog…</p>
+    </section>
+
+    <section id="books" class="book-list" aria-live="polite"></section>
+    <button id="loadMoreButton" class="load-more" type="button">Load more</button>
+  </main>
+
+  <footer class="site-footer">
+    <span>StarShelf</span>
+    <span>Personal preferences and shelf state stay in your browser.</span>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-  <script src="./js/app.js"></script>
   <script src="./js/book-meta.js"></script>
-  <script src="./js/book.js"></script>
+  <script src="./js/score.js"></script>
   <script src="./js/nav.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>
